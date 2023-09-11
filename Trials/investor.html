@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIC MUNI</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+         
+        /* Your CSS styles here */
+        /* For the header and navigation */
+        header {
+            /*background-image:url("IMG_20230822_151417_762.jpg" );*/
+            background-size: cover;
+            background-position: center;
+            background-color: whitesmoke;
+            color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+        header .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .header-content img {
+            width: 300px; /* Adjust the image width as needed */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            text-align: left;
+            position: absolute;
+            left: 12%;
+            color: black;
+        }
+        .social-icons {
+            display: flex;
+            gap: 20px;
+
+        }
+        .social-icons a {
+            color: red;
+            font-size: 50px;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center align items */
+            background-color: #abb8c3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 50px;
+        }
+        nav li:last-child {
+            margin-right: 0;
+        }
+        nav li a {
+            color: orangered;
+            text-decoration: none;
+        }
+        nav li ul {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        nav li:hover ul {
+            display: block;
+        }
+        nav li ul li {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            background-color: darkslateblue;
+            color: white;
+            padding: 5px;
+            border: 0.6px solid #565464;
+            border-radius: 5px;
+        }
+        .search-button {
+            background-color: darkgoldenrod;
+            color: white;
+            border: 0.5px solid #435433;
+            border-radius: 4px;
+            padding: 5px 8px;
+            cursor: pointer;
+        }
+        
+        /* Adjust the logo size */
+        .header img {
+            max-width: 30px; /* Adjust this value as needed */
+            height: auto;
+        }
+
+
+        
+        footer {
+            background-color: #32373c;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }       
+        
+    
+    </style>
+   
+</head>
+<body>
+    <header>
+        <img src="th.jpg" alt="Heading Logo" width="10%" height="15%">
+        <h1>MUNI UNIVERSITY<br>BUSINESS INCUBATION<br>CENTER</h1>
+         <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+
+    </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+                <a href="#">ABOUT US</a>
+                <ul>
+                    <li><a href="historical-background.html">Historical Backround</a></li>
+                    <li><a href="mission.html">Mission,Vision&Core-Value</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">WHAT WE DO</a>
+                <ul>
+                    <li><a href="our-programs.html">Our Programs</a></li>
+                    <li><a href="co-working.html">Co Working Space</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">IMPACT</a>
+                <ul>
+                    <li><a href="investor.html">Investor</a></li>
+                    
+                    <li><a href="startups.html">StartUps</a></li>
+                    <li><a href="Partners.html">Partners</a></li>
+                </ul>
+            </li>
+            <li><a href="contact-us.html">CONTACT-US</a></li>
+            <li><a href="support-us.html">SUPPORT US</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+    <div class="container-fluid" style="text-align: left;">  
+<p>
+    <h1 style="text-align: center; color:blue;">SMEs in West Nile</h1>
+    Muni University hosted the Northern Uganda Investment Symposium from 8-9 August in 2019.
+    The Symposium was convened by Gen. Caleb Akandwanaho Salim Saleh “Oriba” (Rtd), the Chief Coordinator of Operation Wealth Creation to rebrand Africa’s Upper Nile Valley from an area known for the vicious cycle of conflict, forced migration to a virtuous cycle of peace-building, flourishing cross border trade, investment and infrastructure development.<br>
+
+    Below is a list of SMEs or startup ventures that were profiled during the event spanning various sectors so as to facilitate the provision of matchmaking services with potential clients, partners or investors. BIC will also help with capacity building and carry out due diligence for investment opportunities where possible for the SMEs.
+
+</p>
+</div>
+<section>
+<div class="content">
+<div class="container-fluid">                 
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            
+            <th class="th-sm"><b>Business Name</b></th>
+            <th class="th-sm"><b>Sector</b></th>
+            <th class="th-sm"><b>Name of Promoter(s)</b></th>
+            <th class="th-sm"><b>Contact and/or Email</b></th>
+            <th class="th-sm"><b>Project Title</b></th>
+            <th class="th-sm"><b>District</b></th>
+            <th class="th-sm"><b>Investment Value ($ or Ugx)</b></th>
+        </tr>
+    </thead>
+<tbody>
+      <tr>
+      
+      <td>SILICON TECHNICAL SERVICES</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Habib Irima</td>
+      <td>+256 772945013; +256 752121613</td>
+      <td>Production of Sanitary Pads</td>
+      <td>Yumbe</td>
+      <td>UGX 6,070,000</td>
+</tr>
+    <tr>
+      
+      <td>Okoro Organic Fruits Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Not provided</td>
+      <td>Not provided</td>
+      <td>Establishment of Avocado Oil Investment Project</td>
+      <td>Zombo</td>
+      <td>USD 367,000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Akile Titia Kiwanuka</td>
+      <td>+256 393225548; +256785771265  Email: titiaakilekiwanuka985@gmail.com</td>
+      <td>Production of Re-Usable Sanitary Pads</td>
+      <td>Arua</td>
+      <td>UGX 44,240,000</td>
+</tr>
+    <tr>
+      
+      <td>PINCER GROUP INTERNATIONAL Ltd (TPGIL)</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Dr. Milton Mutto, Mr. Tom Duku, Dr. David Dronyi, Mr. John Oyambi &amp; Mr. Charles Kilibo</td>
+      <td>+256 772459360 Email: dukutt@yahoo.com</td>
+      <td>Production of Body Lotion out of Shea Butter - TIWE (SHEA) Lotions Investment Project</td>
+      <td>Kampala</td>
+      <td>USD 1, 338, 000</td>
+</tr>
+    <tr>
+      
+      <td>PINCER GROUP INTERNATIONAL Ltd (TPGIL)</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Dr. Milton Mutto, Mr. Tom Duku, Dr. David Dronyi, Mr. John Oyambi &amp; Mr. Charles Kilibo</td>
+      <td>+256772459360  Email: dukutt@yahoo.com</td>
+      <td>Production of Beverages from Calyces of Hibiscus (Kerekende)</td>
+      <td>Kampala</td>
+      <td>USD 1, 240, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Akankwasa Sylvia</td>
+      <td>+256 772644610</td>
+      <td>Sugarcane Wine Production</td>
+      <td>Not provided</td>
+      <td>UGX 1, 000, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>THE PINCER GROUP INTERNATIONAL LTD</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Not provided</td>
+      <td>Not provided</td>
+      <td>Hibiscus Juice Production</td>
+      <td>Not provided</td>
+      <td>USD 1, 240, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Esaburu Stella</td>
+      <td>+256 782831814</td>
+      <td>Wine, Soft drink, Medicinal drink Production using Hibiscus</td>
+      <td>Arua</td>
+      <td>UGX 420, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Tumwesigye Justus</td>
+      <td>Not provided</td>
+      <td>Agro-processing, Packaging and marketing of Wine, natural syrup and pineapple juice</td>
+      <td>Not provided</td>
+      <td>UGX 300, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>KODJO MIXED FARM</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mrs. Scholastica Deru</td>
+      <td>+256 782399000; +256 772514111  Email: edemacuwadriarichard@gmail.com</td>
+      <td>Establishment of Organic Rfuit Processing Plant</td>
+      <td>Arua</td>
+      <td>UGX 510, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>ATIAK SUGAR</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Christine Lutara</td>
+      <td>+256 772725196  Email: clutara@yahoo.com</td>
+      <td>Sugar Production</td>
+      <td>Gulu</td>
+      <td>UGX 437, 953, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>MUNGUFENI GROUP</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Aleku Alone Wilfred</td>
+      <td>+256 777715890</td>
+      <td>Small scale Maize and Rice Milling Factory</td>
+      <td>Arua</td>
+      <td>UGX 708, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Sakia B. Adile</td>
+      <td>+256 776547288  Email: abornfree@yahoo.com</td>
+      <td>Establishment of Fruit Processing Factory</td>
+      <td>Not provided</td>
+      <td>UGX 1, 000, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>FICHI FOODS (U) Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Driciru Fiona</td>
+      <td>+256 772507219</td>
+      <td>Sheanut Seed Oil Production</td>
+      <td>Mukono</td>
+      <td>UGX 120, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>NILE NATURAL FRUITS PRODUCTS LTD</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Emmanuel Ajedra</td>
+      <td>P.O.Box 685, Arua, Uganda. +256 772373692; +256 754373692 E-mail: sales@nilenatural.co.ug; ajedra@yahoo.com.hk</td>
+      <td>Fruit Juice Processing Project</td>
+      <td>Arua</td>
+      <td>UGX 15, 000, 000, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Philliam Adriko &amp; Mr. Anson Cadribo</td>
+      <td>Not provided</td>
+      <td>Provision of Mechanized Farm Services and Farm Inputs</td>
+      <td>Not provided</td>
+      <td>USD 1, 500, 000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Moses Abindu</td>
+      <td>Not provided</td>
+      <td>Shea Butter Oil Project</td>
+      <td>Madi</td>
+      <td>Not Provided</td>
+</tr>
+    <tr>
+      
+      <td>ECOSCOPE GLOBAL Co. Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Not provided</td>
+      <td>+256 777499588; +256 702310802 E-mail: ecoscopeglobal@gmail.com</td>
+      <td>Not provided</td>
+      <td>Okollo</td>
+      <td>30,000</td>
+</tr>
+    <tr>
+      
+      <td>Westnile Agritech &amp; Consultancy (WATAC) Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Stephen Bakole,  Mr. Yashin Angua &amp; Mr. Gard Feni</td>
+      <td>P.O.Box 1, Yumbe. E-mail: bkstevo@yahoo.com; gardfeni@gmail.com</td>
+      <td>Natural Fruit Juice Processing Project</td>
+      <td>Yumbe</td>
+      <td>UsD 1,190,000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Moses Bakole Maandebo &amp; Ms. Martina Adubango</td>
+      <td>+256 776188842; +256 782078702  E-mail: martinadubango2@gmail.com; maandebomoses@gmail.com</td>
+      <td>Avocado Value Chain</td>
+      <td>Arua</td>
+      <td>USD 38,000</td>
+</tr>
+    <tr>
+      
+      <td>NAREO ENTERPRISES</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Austin Andemani</td>
+      <td>+256 773488505 E-mail: andstin@gmail.com</td>
+      <td>Production of Shea Butter Oil and Balanite Oil</td>
+      <td>Yumbe</td>
+      <td>UGX 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DOROSON COTTAGE INDUSTRY</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Ronald Obedling</td>
+      <td>+256 786005821; +256 787882840</td>
+      <td>Production of Shea Butter Oil</td>
+      <td>Nebbi</td>
+      <td>UGX 100,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NEW BEGINNINGS INVESTMENTS LIMITED</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Caroline Lilly Ocanda</td>
+      <td>P.O.Box 119, Arua, Uganda  Tel: +256 772513764; +256 702513764 E-mail: carolocanda@yahoo.com</td>
+      <td>Production of Shea Butter Products</td>
+      <td>Arua</td>
+      <td>UGX 160,000,000</td>
+</tr>
+    <tr>
+      
+      <td>RELIANCE SCHOOL OF TECHNOLOGY, ENGINEERING, MANAGEMENT AND BUSINESS STUDIES - SMC LTD</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>N/a(refer to business name)</td>
+      <td>Tel: +256778763865; +256772406798</td>
+      <td>Agro-processing, Packaging and marketing of Wine, natural syrup and pineapple juice</td>
+      <td>Not provided</td>
+      <td>UGX 300,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NILE TROPICAL INDUSTRIES (U) Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Hon. Dr. Betty Pachuto</td>
+      <td>Not P.O.Box 121, Nebbi. Tel: +256 775582283  E-mail: bettyudongo@gmail.com</td>
+      <td>Production of Cosmetics and Body care lotion from Natural Organic Ingredients (Shea Butter, oils, herbs))</td>
+      <td>Nebbi</td>
+      <td>USD 365,346</td>
+</tr>
+    <tr>
+      
+      <td>MAN ENGINEERING (U) Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Geoffrey Asea</td>
+      <td>P.O.Box 863, Arua, Uganda  Tel: +256776210733; +256 752210733  Email: meul2010@gmail.com</td>
+      <td>Manufacturing the Concrete (Pole, Slate, Wood Preservatives)</td>
+      <td>Arua</td>
+      <td>USD 5,500,000</td>
+</tr>
+    <tr>
+      
+      <td>MOYO BUSINESS DEVELOPMENT Co. Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Not provided</td>
+      <td>Not provided</td>
+      <td>Development of Afoji Cross Border Agro-Industrial Park</td>
+      <td>Moyo</td>
+      <td>USD 16,330,296</td>
+</tr>
+    <tr>
+      
+      <td>KOBOKO DISTRICT</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>N/a(refer to business name)</td>
+      <td>Not provided</td>
+      <td>Development of Industrial Park at Oraba Town Board</td>
+      <td>Koboko</td>
+      <td>Not Provided</td>
+</tr>
+    <tr>
+      
+      <td>BRIGHT CONSULTS AFRICA Ltd</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Arnold Acidri</td>
+      <td>Tel: +256704893388; +256773893388  E-mail: achidriarnold@gmail.com</td>
+      <td>Development and Production of Nurses and Midwives toolKit</td>
+      <td>Not provided</td>
+      <td>UGX 76,000, 000</td>
+</tr>
+    <tr>
+      
+      <td>LDN Laboratory Services</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Not provided</td>
+      <td>Tel: +256773245548; +256757230027</td>
+      <td>Development and Production of Scientific Equipment</td>
+      <td>Koboko</td>
+      <td>UGX 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Gad Andana Olikoa</td>
+      <td>Tel: +256776659964 E-mail: olikoamixedfarm@gmail.com</td>
+      <td>Production of Animal feeds for Dairy Animals, Poultry, Goats, tec</td>
+      <td>Koboko</td>
+      <td>UGX 800,000,000</td>
+</tr>
+    <tr>
+      
+      <td>EMMAMOSE COMPANY LTD</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Mr. Moses Abindu &amp; Mr. Emmanuel Fudribo</td>
+      <td>Tel: +256 782443815; +256 774362733  Email: fudriboemm@gmail.com</td>
+      <td>Establishment of Welding and Fabrication Investment</td>
+      <td>Arua</td>
+      <td>USD 121,748</td>
+</tr>
+    <tr>
+      
+      <td>ARUA DISTRICT LOCAL GOVERNMENT</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Agani Rebecca</td>
+      <td>Tel: +256 774564910</td>
+      <td>Construction of Industrial Park</td>
+      <td>Arua</td>
+      <td>USD 25,000,000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Hajj. Adam Avule</td>
+      <td>Not provided</td>
+      <td>Construction of Sunflower Factory</td>
+      <td>Yumbe</td>
+      <td>Not Provided</td>
+</tr>
+    <tr>
+      
+      <td>BENITO VENTURES</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Esaburu Stella</td>
+      <td>Tel: +256782831814</td>
+      <td>Production of Soft Drinks from Hibiscus</td>
+      <td>Arua</td>
+      <td>UGX 420,000,000</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Hon. Auru Anne</td>
+      <td>Tel: +256 772915259</td>
+      <td>ACB Agro Industrial Park</td>
+      <td>Moyo</td>
+      <td>UGX 60,422,092,635 OR USD 16,330,296</td>
+</tr>
+    <tr>
+      
+      <td>Not provided</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Hajj. Adam Avule</td>
+      <td>Tel: +256 786677181; +256 785568036; +256 772280534</td>
+      <td>Construction of Sunflower Factory</td>
+      <td>Yumbe</td>
+      <td>USD 1,890,000</td>
+</tr>
+    <tr>
+      
+      <td>CARESTART MEDICAL LABORATORY</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr. Eyotre Godfrey</td>
+      <td>Tel: +256785561119; +256756038737</td>
+      <td>Medical Laboratory Equipments and Reagents Supply</td>
+      <td>Arua</td>
+      <td>UGX 5,000,000</td>
+</tr>
+    <tr>
+      
+      <td>GEOFFMAN ENTERPRISES UGANDA LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Manasse Acidri</td>
+      <td>Tel: +256772912124; +256755912124; +256393216193</td>
+      <td>Integrated Sustainable Agribusiness Services (ISAS)</td>
+      <td>Arua</td>
+      <td>USD 800,000</td>
+</tr>
+    <tr>
+      
+      <td>MBILI &amp; SONS LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Luiji Totia</td>
+      <td>+256785887727;+256782111100;+256772635584;+256772900890</td>
+      <td>Maize milling value chain</td>
+      <td>Arua</td>
+      <td>Ushs 1,406,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MAWA JOEL GENERAL STORES</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr: Joel Alemiga</td>
+      <td>Tel: +256784183133; +256703057135</td>
+      <td>Cassava value chain project</td>
+      <td>Yumbe</td>
+      <td>Ushsm120,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OA AGRO SERVICES UGANDA LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Denis Asizua &amp; Mr. Moses Obeta</td>
+      <td>asizua@gmail.com</td>
+      <td>Sesame value chain</td>
+      <td>Arua</td>
+      <td>USD 900,000</td>
+</tr>
+    <tr>
+      
+      <td>AJUMANI TREE NURSERY LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Francis Xavier Owole</td>
+      <td>Tel: 256757839966</td>
+      <td>Ogolo Rice Irrigation scheme</td>
+      <td>Ajumani</td>
+      <td>Ushs 659,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ALIOPA POULTRY  FARMING GROUP</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Adrian Drakuma</td>
+      <td>Tel:+256774471238;+256791979111</td>
+      <td>Agricultural Enterprise</td>
+      <td>Maracha</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>RIHES AGRIBUSINESS MIXED FARM</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Solomon Edekitia</td>
+      <td>+256783674636</td>
+      <td>Mixed farming</td>
+      <td>Arua</td>
+      <td>USD 1,725,000</td>
+</tr>
+    <tr>
+      
+      <td>FOUNDATION FOR RIGHTS AND PROTECTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Not provided</td>
+      <td>Tel: +256772310669</td>
+      <td>Agricultural production and Produce Marketing</td>
+      <td>Moyo</td>
+      <td>USD 249950</td>
+</tr>
+    <tr>
+      
+      <td>LOBE SUKARI WORKS LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Habib Tibbrichu</td>
+      <td>Tel: +256782072227</td>
+      <td>Comercial Sugar Production Project</td>
+      <td>Yumbe</td>
+      <td>USD 630,946,393</td>
+</tr>
+    <tr>
+      
+      <td>CASSAVA VALUE ADDITION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Lamech Aniku</td>
+      <td>Tel: +256772352539 Email: anikuandsons@gmail.com</td>
+      <td>Cassava Value Addition</td>
+      <td>Arua</td>
+      <td>Ushs 258,000,000</td>
+</tr>
+    <tr>
+      
+      <td>COMMERCIAL CASSAVA PROJECT</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Josehp Atamati</td>
+      <td>Tel: +25677892090;0+256752658978</td>
+      <td>Commercial Cassava Production Project</td>
+      <td>Arua</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>KER KWARO ACHOLI-MINISTRY OF PRODUCTION, MAKO GENERAL MOTORS, SOLAR NOW, &amp; SKY DESIGN UGANDA</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Ker Kwaro Acholi- Ministry of Production</td>
+      <td>not provided</td>
+      <td>Revertualisation of agricultural production, mechanisation and commercial industry</td>
+      <td>Gulu</td>
+      <td>40,720,000</td>
+</tr>
+    <tr>
+      
+      <td>AGRITECH</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Collins Jeremiah Mawa</td>
+      <td>Tel: +256777081799 Email cmawah2rjeremiah@gmail.com; collins.mawa@westnileweb.com</td>
+      <td>E-farming linkages and expertise</td>
+      <td>Arua</td>
+      <td>USD 165,000</td>
+</tr>
+    <tr>
+      
+      <td>WAKATI FARM CONSULTS</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Norbert Alaru &amp; Mr. Vincent Akuku</td>
+      <td>not provided</td>
+      <td>Mixed farming project</td>
+      <td>Ajumani</td>
+      <td>Ushs 210,352,400</td>
+</tr>
+    <tr>
+      
+      <td>WESTNILE COOPERATIVE UNION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Moses Etukibo</td>
+      <td>Tel: +256772307359 Email: westniletobcoopunion@gmail.com</td>
+      <td>Transformation through Cassava value chain</td>
+      <td>Arua</td>
+      <td>Ushs 47,802,900,000</td>
+</tr>
+    <tr>
+      
+      <td>ROMA AGRO-TOURISM LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Matua Romano</td>
+      <td>Tel: +256751737373; +256786931977 Email: romanomatua@gmail.com</td>
+      <td>Commercial Agricultural Project</td>
+      <td>Arua</td>
+      <td>Ushs 1,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>RAYMONS INTEGRATED VENTURES</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Dr Seraphine Adibaku</td>
+      <td>Tel +256772507245; +256753507245</td>
+      <td>Agricultural production and Value Chain</td>
+      <td>Moyo</td>
+      <td>USD 1,500,000</td>
+</tr>
+    <tr>
+      
+      <td>RAL&amp;FAMILY (U) LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>H.E Richard Laus Angualia</td>
+      <td>Tel: +256772892966; +256771095926, +256752892966 Email: rangualia@gmail.com</td>
+      <td>Agricultural production</td>
+      <td>Arua</td>
+      <td>Ushs 420,000,000</td>
+</tr>
+    <tr>
+      
+      <td>IJIRIBI INVESTMENTS LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr.Adnan Chandiga</td>
+      <td>Tel: +256772987128,+256752070416,+256787971772 Email: ijiribiinvestments limited2018@gmail.com</td>
+      <td>Commercial production of simsim</td>
+      <td>Yumbe</td>
+      <td>USD 4,000,000</td>
+</tr>
+    <tr>
+      
+      <td>BUDO META INVESTMENTS LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>MR. Rashi Hippo Azubu</td>
+      <td>Tel: +256753401805, +256773185488, +256776210334, +256755400079, +256772254466 Email budometainvestments@gmail.com</td>
+      <td>Commercial Fruit production</td>
+      <td>Yumbe</td>
+      <td>USD 5,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LOKETA AGROTOURISM FARM LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. John Baptist Amori</td>
+      <td>Tel: +256774208661; +256752697916 Email: amorij@yahoo.co.uk</td>
+      <td>irrigation for sustainable production</td>
+      <td>Koboko</td>
+      <td>Ushs 1,800,000,000</td>
+</tr>
+    <tr>
+      
+      <td>Value addition project</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Samuel Edemara</td>
+      <td>Tel: +256788146966 edemarasam@gmail.com</td>
+      <td>value addition of cassava and orange</td>
+      <td>Arua</td>
+      <td>USD 55,000,000</td>
+</tr>
+    <tr>
+      
+      <td>AGRO-PROTIEN PRODUCTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Ms. Gladys Jane Eyotaru, Mr Norbert Ruabantu Mwebaze, Mr Godwin Bannet Ahimbisibwe and Mr Titus Kaali Tahaya</td>
+      <td>not provided</td>
+      <td>Production of reliable Agri-protein</td>
+      <td>not provided</td>
+      <td>Ushs 4,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ZICO GENERAL SUPPLIES</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Zico general supplies</td>
+      <td>Tel: +256775098197; +256788663828; +256782661640 Email:</td>
+      <td>Agricultural production-maize &amp; beans</td>
+      <td>Ajumani</td>
+      <td>Ushs 300,000,000</td>
+</tr>
+    <tr>
+      
+      <td>TALANTA CONSULTANTS</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr Desmond Nzaana</td>
+      <td>Tel: +256785788642, +256778884634</td>
+      <td>Grain Handling and Storage facility</td>
+      <td>Gulu</td>
+      <td>USD 6,500,000</td>
+</tr>
+    <tr>
+      
+      <td>OKADO INVESTMENTS LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Oola Ambrose, Mrs. Kipwola Anne</td>
+      <td>Tel: +256772342602 Email okadoinvestments@gmail.com</td>
+      <td>Crop production - bananas and beans</td>
+      <td>Gulu</td>
+      <td>USD 1,774,324</td>
+</tr>
+    <tr>
+      
+      <td>SUN FLOWER PRODUCTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Andiga A.K. Jabir</td>
+      <td>Tel +256786233605</td>
+      <td>Sun flower production, processing and sale</td>
+      <td>Arua</td>
+      <td>Ushs 1,200,000,000</td>
+</tr>
+    <tr>
+      
+      <td>METINO FOOD SHELTER</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Metino</td>
+      <td>Tel: +256772515296; +256785663477; +256786677181</td>
+      <td>Sun flower production, processing and sale</td>
+      <td>Arua</td>
+      <td>USD 1,000,000</td>
+</tr>
+    <tr>
+      
+      <td>CHE-UGANDA/ VISA FUND</td>
+      <td>Services (Education, Medical &amp; Finance)</td>
+      <td>Mr Geoffrey Adroa Email: visafundu@gmail.com; adroageoffrey@rocketmail.com</td>
+      <td>Tel: +256779900083</td>
+      <td>Uganda natural food bank feeding the nation</td>
+      <td>Maracha</td>
+      <td>USD 2,540,000,000</td>
+</tr>
+    <tr>
+      
+      <td>GREEN HOUSE TOMATO PRODUCTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Emmanuel Fudribo</td>
+      <td>Tel: +256774362733 Email fudriboemm@gmail.com</td>
+      <td>Tomato production in green house</td>
+      <td>Arua</td>
+      <td>USD 88,070</td>
+</tr>
+    <tr>
+      
+      <td>NATIONAL AGRICULTURAL RESEARCH ORGANISATION (NARO)</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Dr. Sadik Kasim</td>
+      <td>Tel: +256772673458</td>
+      <td>Basic and Certified Seed Production, Consultancies, Cassava Processing, Tissue Culture, Furniture, Bio-Pesticides, Bio-fertilizers, Livestock feeds, Semen Bulking and sexing, Liquid nitrogen and Agro-machinery</td>
+      <td>Arua</td>
+      <td>UGX 700,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ZEEP AGRO LTD</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr. Olal Andrew Cohen</td>
+      <td>Tel: +256701983616; +256784146336; +256777865038 Email: zeepugltd@yahoo.com; cossinauk@gmail.com</td>
+      <td>Maize and Rice Processing and general grain Trading</td>
+      <td>Gulu</td>
+      <td>USD 3,523,000</td>
+</tr>
+    <tr>
+      
+      <td>YELLOW BRIGADE ASSOCIATION SACCO (YEBA SACCO)</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr jurua Karilo Alia</td>
+      <td>Tel +256772541452</td>
+      <td>Investment in Mechanised Commercial Agriculture</td>
+      <td>Arua</td>
+      <td>Ushs 250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SERVING YOUTH THROUGH DEVELOPMENTAL ADVOCACIES- SYDA</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr candia Ronald Kizito</td>
+      <td>Tel: +256782449953; +256783280606 Email: sydaadvocacy@gmail.com; candiaronaldkizito@gmail.com</td>
+      <td>Investment in Sustainable Agriculture</td>
+      <td>Arua</td>
+      <td>80,000,000</td>
+</tr>
+    <tr>
+      
+      <td>AGRO INPUTS</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Adrabo Stanley</td>
+      <td>Tel: +256785499496</td>
+      <td>Agro-inputs Business</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>TALANTA CONSULTANTS</td>
+      <td>Services (Education, Medical &amp; Finance)</td>
+      <td>Mr. Nzaana Desmond</td>
+      <td>Tel: +256785788642, +256778884634 Email: talanta.consult@gmail.com</td>
+      <td>Financial Services to Rural Agribusiness</td>
+      <td>Gulu</td>
+      <td>USD 6,500,000</td>
+</tr>
+    <tr>
+      
+      <td>OLIVE ZONE (U) LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Ms. Beatrice Amanio</td>
+      <td>Email: beatamanio@yahoo.com</td>
+      <td>Livestock feeds</td>
+      <td>Arua</td>
+      <td>Ushs 270,000,000</td>
+</tr>
+    <tr>
+      
+      <td>BARAPHA BUSINESS AND CULTURAL ENTERPRISE</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Barapha Business and Cultural Enterprise</td>
+      <td>Not provided</td>
+      <td>Agricultural project</td>
+      <td>Not provided</td>
+      <td>Ushs 242,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SCOGEM ENTERPRISES LTD</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>SCOGEM Enterprises ltd</td>
+      <td>Email: scogemmenterprisesltd@gmail.com</td>
+      <td>Coffee Value Chain</td>
+      <td>Zombo</td>
+      <td>USD 500,000</td>
+</tr>
+    <tr>
+      
+      <td>HORTICULTURE  PROJECT</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Elias Lagu Yangu and Ms Ann Adroru</td>
+      <td>Email: adroruann@yahoo.com</td>
+      <td>Horticulture project</td>
+      <td>Not provided</td>
+      <td>Ushs 40,000,000</td>
+</tr>
+    <tr>
+      
+      <td>IRYEL GENERAL TRADING CO.LTD</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>IRYEL General Trading Co Ltd</td>
+      <td>Tel: +256782699689;+256751514161</td>
+      <td>Coffee Value Chain</td>
+      <td>Kampala</td>
+      <td>Ushs 4,361,250,165</td>
+</tr>
+    <tr>
+      
+      <td>DIARY MILK</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Agard Karim</td>
+      <td>Not provided</td>
+      <td>Diary Milk Project</td>
+      <td>Ajumani</td>
+      <td>Ushs 269,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SUNLOWER PRODUCER</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Adam Avule</td>
+      <td>Tel: +256786677181;+256785568036</td>
+      <td>Sunflower Production</td>
+      <td>Yumbe</td>
+      <td>USD 2,700,000</td>
+</tr>
+    <tr>
+      
+      <td>AGRO-COMMERCIAL PLANTATION AGRICULTURE</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Apenjonga Angala Rocks Pascal</td>
+      <td>Not provided</td>
+      <td>Agro-commercial plantation</td>
+      <td>Zombo</td>
+      <td>Ushs 30,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SUGARCANE PLANTATION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Al Hajji Jaffer A Farjallah</td>
+      <td>Not provided</td>
+      <td>sugarcane plantation</td>
+      <td>Yumbe</td>
+      <td>USD 630,946,363</td>
+</tr>
+    <tr>
+      
+      <td>SUGARCANE PLANTATION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Vuyaya Grace</td>
+      <td>Tel +256772994340</td>
+      <td>sugarcane plantation</td>
+      <td>Ajumani</td>
+      <td>Ushs 96,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SUGARCANE PLANTATION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Rapheal Mambbwi</td>
+      <td>Tel +256787470814</td>
+      <td>sugarcane plantation</td>
+      <td>Ajumani</td>
+      <td>Ushs 250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SUGARCANE PLANTATION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Ms. Santa Joyce Laker</td>
+      <td>Tel: +256772498650 Email: rafeal2014@gmail.com</td>
+      <td>sugarcane plantation</td>
+      <td>Gulu</td>
+      <td>Ushs 5,042,778,819</td>
+</tr>
+    <tr>
+      
+      <td>SHEA GROWING AND PROTECTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Acema Muzamil</td>
+      <td>Tel: +256774289754; +25678104686 Email: achemaugandalimited@gmail.com</td>
+      <td>Shea trees growing and Protection</td>
+      <td>Mukono</td>
+      <td>Ushs 320,000,000</td>
+</tr>
+    <tr>
+      
+      <td>AKARA FARMERS GROUP</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>AKARA Farmers Group</td>
+      <td>Not provided</td>
+      <td>Integrated Agricultural Enterprise</td>
+      <td>Madi-Okollo</td>
+      <td>USD 2,650,920</td>
+</tr>
+    <tr>
+      
+      <td>MORDERN FARMING</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Obwonch Ben</td>
+      <td>Tel: +256782287860 Email: orinjigaben@gmal.com</td>
+      <td>Mordern Farming with access to modern farming machinery</td>
+      <td>Not provided</td>
+      <td>Ushs 1,500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>COMMERCIAL MAIZE AND BEANS FARMING</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Atori Geoffrey Nyuma</td>
+      <td>Not provided</td>
+      <td>Commercial Maize and Beans Farming</td>
+      <td>Ajumani</td>
+      <td>Ushs 300,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LEGUME CEREAL PROCESSING</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Permu Roseline</td>
+      <td>Tel: +25677780055</td>
+      <td>value addition in legume cereal processing</td>
+      <td>Not provided</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DEMAK ENTERPRISE MARACHA</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Debo Geoffrey</td>
+      <td>Tel: +256774496666;+256755596666</td>
+      <td>Business in Agri-inputs (fertilizers, tools,seeds,spray pumps</td>
+      <td>Maracha</td>
+      <td>Ushs 150,000,000</td>
+</tr>
+    <tr>
+      
+      <td>AGRI INPUTS</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Iganachi Razaki Omia</td>
+      <td>Not provided</td>
+      <td>Business in agri-inputs, training and advisory services</td>
+      <td>Arua</td>
+      <td>USD 100,000</td>
+</tr>
+    <tr>
+      
+      <td>ANIMAL FEEDS PROCESSING PLANT</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr. Andama Gad Olikoa</td>
+      <td>tel: +256776659964</td>
+      <td>Animal feeds processing</td>
+      <td>Madi-Okollo</td>
+      <td>Ushs 800,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MALUTI HOLDINGS (U) LTD</td>
+      <td>Manufacturing and Industrial Sector</td>
+      <td>Mr. philliam Adriko</td>
+      <td>Not provided</td>
+      <td>Value Addition by production of pellets</td>
+      <td>Not provided</td>
+      <td>USD1,000,000</td>
+</tr>
+    <tr>
+      
+      <td>JECKO GENERAL TRADERS</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Ovoya Emmanuel</td>
+      <td>Not provided</td>
+      <td>exportation of coffee</td>
+      <td>Nebbi</td>
+      <td>Ushs 200,000,000</td>
+</tr>
+    <tr>
+      
+      <td>KELMAK BUSINESS SERVICES</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Denya Francis and Mr Vundru Alberto</td>
+      <td>Not provided</td>
+      <td>Tree planting project</td>
+      <td>Moyo</td>
+      <td>USD 50,000</td>
+</tr>
+    <tr>
+      
+      <td>OVAP TECHNOLOGIES ARUA LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Ovap Technologies</td>
+      <td>Tel: +256781299980</td>
+      <td>Modern onsite agricultural extension</td>
+      <td>Arua</td>
+      <td>Ushs 16,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MIXED CROP AND ANIMAL FARMING, VALUE ADDITION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Drakana Adrian</td>
+      <td>Tel:+256774471238;+256791979111</td>
+      <td>Mixed farming project and value addition</td>
+      <td>Maracha</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>COMMERCIAL CASSAVA PROJECT</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Angudubo Isaac</td>
+      <td>Not provided</td>
+      <td>Cassava processing plant</td>
+      <td>Yumbe</td>
+      <td>Ushs 1,200,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NYADRI PRODUCE BUYERS AND SELLERS ASSOCIATION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Nyadri Produce buyers and sellers association</td>
+      <td>Not provided</td>
+      <td>Buying and selling of agricultural inputs, Nursery bed preparation.</td>
+      <td>Maracha</td>
+      <td>Ushs 30,000,000</td>
+</tr>
+    <tr>
+      
+      <td>FOUNDATION FOR RIGHTS AND PROTECTION</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Dusman Taban</td>
+      <td>Not provided</td>
+      <td>Agricultural production and Produce Marketing</td>
+      <td>Moyo</td>
+      <td>USD 249,950</td>
+</tr>
+    <tr>
+      
+      <td>ROBA ENGINEERING CO LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Robert Wadria</td>
+      <td>Tel: +256772826373; +256773800881 Email: robaengineeringcompany@gmail.com</td>
+      <td>Commercial establishment of Bamboo for sustainable development</td>
+      <td>Not provided</td>
+      <td>USD 50,000</td>
+</tr>
+    <tr>
+      
+      <td>LEAM INTERNATIONAL</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr. Leku John Amale</td>
+      <td>Tel: +256772382086 Email: leaminternational@yahoo.com</td>
+      <td>Large scale tree planting and natural ecosystems conservation</td>
+      <td>Moyo</td>
+      <td>USD 2,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>TREE SEEDLINGS</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Mr Dralega Henry</td>
+      <td>Tel: +256772545843 Email: henrydralega@gmail.com</td>
+      <td>Tree seedling growing</td>
+      <td>Arua</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DRAGON AGRO-FORESTRY</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>Dragon Agro-forestry</td>
+      <td>Not provided</td>
+      <td>Development of commercial tree nursery</td>
+      <td>Yumbe</td>
+      <td>Ushs 300,000,000</td>
+</tr>
+    <tr>
+      
+      <td>RAL&amp;FAMILY (U) LTD</td>
+      <td>Agriculture (Crops and Livestock)</td>
+      <td>H.E Richard Laus Angualia</td>
+      <td>Tel: +256772892966; +256771095926, +256752892966 Email: rangualia@gmail.com</td>
+      <td>Development of commercial tree nursery</td>
+      <td>Arua</td>
+      <td>Ushs750,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ALPHER LEISURE CENTER</td>
+      <td>Tourism</td>
+      <td>Mr Dison Bosco Okumu</td>
+      <td>Tel:+256784195766 Email: disonokumu@gmail.com</td>
+      <td>The Car Cable and Golf Course Project</td>
+      <td>Kitgum</td>
+      <td>24,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ANGARA TOURS AND TRAVELS</td>
+      <td>Tourism</td>
+      <td>Mr. Francis Obedgui</td>
+      <td>Tel: +256781541372 Email: angaratours2@gmail.com</td>
+      <td>Tour Utility Project</td>
+      <td>Pakwach</td>
+      <td>USD 25,000</td>
+</tr>
+    <tr>
+      
+      <td>WINDSOR HOTEL PAKWACH LTD</td>
+      <td>Tourism</td>
+      <td>Windsor Hotel Pakwach Ltd</td>
+      <td>+256772482035; +256752482035 Email: windsorhotelpakwach@gmail.com</td>
+      <td>Refubrishment and extension of Windsor pakwach hotel ltd to Windsor Emin Pasha Nile resort hotels and cottages</td>
+      <td>Pakwach</td>
+      <td>USD 6,200,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OYIIRA PALBEK INVESTMENTS (U) LTD</td>
+      <td>Tourism</td>
+      <td>Ms. Betty Aketch Okot and Ms. Suzan Akot Okot</td>
+      <td>Tel: +256782499078</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Koboko</td>
+      <td>Ushs750,000,000</td>
+</tr>
+    <tr>
+      
+      <td>HOTEL AND HOSPITALITY</td>
+      <td>Tourism</td>
+      <td>Mr. Geofrey Asuma</td>
+      <td>Tel: +256785568468</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Maracha</td>
+      <td>Ushs 2,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LIFE CONCERN</td>
+      <td>Tourism</td>
+      <td>Mr William Anyolitho</td>
+      <td>Tel: 256393206111</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Zombo</td>
+      <td>Ushs 1,700,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ZALIZA HILL VIEW INTERNATIONAL MOTEL</td>
+      <td>Tourism</td>
+      <td>MR Nicholas Aluniyo</td>
+      <td>Tel: +256783572231</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MT WATI ECOTOURISM</td>
+      <td>Tourism</td>
+      <td>Mr Richard Andama</td>
+      <td>Tel: +256788222181; +256782724612</td>
+      <td>Tourist Resort Project</td>
+      <td>Arua</td>
+      <td>USD 100,000</td>
+</tr>
+    <tr>
+      
+      <td>WESTNILE CORRIDOR TOUR AND TRAVEL LTD</td>
+      <td>Tourism</td>
+      <td>Westnile Corridor Tour and Travel Ltd</td>
+      <td>Tel +256771800306; +256773550200 Email: oleasayas@gmail.com</td>
+      <td>Ecotourism project</td>
+      <td>Arua</td>
+      <td>Ushs 10,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DAVID WOLLO</td>
+      <td>Tourism</td>
+      <td>Mr David Wollo</td>
+      <td>Tel:+256770518254</td>
+      <td>Hotel services</td>
+      <td>Maracha</td>
+      <td>Ushs 70,000,000</td>
+</tr>
+    <tr>
+      
+      <td>TOURISM AND HOSPITALITY</td>
+      <td>Tourism</td>
+      <td>Mr Henry Amandua</td>
+      <td>Tel: +256772664541 Email: henrymundua@gmail.com</td>
+      <td>Preovision of Hotel and Tourism Services</td>
+      <td>Arua</td>
+      <td>Ushs 2,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA WOMEN ENTERPRENEURS ASSOCIATION</td>
+      <td>Tourism</td>
+      <td>Mrs Caroline Lilly Ocanda</td>
+      <td>Tel: +256772513764; +256702513764 Email: carolocanda@yahoo.com</td>
+      <td>Assorted Tourists Materials</td>
+      <td>Arua</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MADI CULTURAL AND HOSPITALITY CENTER</td>
+      <td>Tourism</td>
+      <td>Prof. Christine Dranzoa</td>
+      <td>Tel: +256782717945</td>
+      <td>Cultural and hospitality</td>
+      <td>Moyo</td>
+      <td>USD 1,586,056.15</td>
+</tr>
+    <tr>
+      
+      <td>DEZERT BREEZE HOTEL LIMITED</td>
+      <td>Tourism</td>
+      <td>Mr. Oluma Micheal</td>
+      <td>Tel +256774900343</td>
+      <td>Expanding a 2 star Hotel to a 5 star hotel</td>
+      <td>Arua</td>
+      <td>Ushs 5,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OASIS 24 SEVEN LTD</td>
+      <td>Tourism</td>
+      <td>Mr Joseph Kyobe Wambuzi</td>
+      <td>Tel: +256780771969; +256701085781 Email: oasis.twentyfourseven@yahoo.com</td>
+      <td>Tourists Service Center</td>
+      <td>Arua</td>
+      <td>Ushs 1,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OCEMACENI PROJECT FOR EVENTS MANAGEMENT, HOTEL AND HOSPITALITY</td>
+      <td>Tourism</td>
+      <td>Mrs. Lenia Sipura</td>
+      <td>Tel: +256789047771; +256772515719</td>
+      <td>tourism and hospitality</td>
+      <td>Arua</td>
+      <td>Ushs 63,750,000</td>
+</tr>
+    <tr>
+      
+      <td>MOLA ENTERPRISES LTD</td>
+      <td>Tourism</td>
+      <td>DR. Linus Carl Amandu</td>
+      <td>Tel: +256784552038; +256772514199</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Arua</td>
+      <td>USD 1,186,000</td>
+</tr>
+    <tr>
+      
+      <td>NILE DOVE</td>
+      <td>Tourism</td>
+      <td>Mr Kasamba Jerry and Ms Masinde Roselyne</td>
+      <td>Tel:+256772984131 Email: kasambajerry@gmail.com; niledove0@gmail.com</td>
+      <td>Demand oriented products of unique cultural and historical heirritage in Okoro</td>
+      <td>Zombo</td>
+      <td>EURO 620,000</td>
+</tr>
+    <tr>
+      
+      <td>LEGENDS J V RECREATION AND LEISURE PARK</td>
+      <td>Tourism</td>
+      <td>Mr. Tabu Lambert</td>
+      <td>Tel; +256777626167</td>
+      <td>Tourism, Hospitality business and Car washing</td>
+      <td>Arua</td>
+      <td>Ushs 280,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DADZ PUB AND SONS RESTURANT</td>
+      <td>Tourism</td>
+      <td>Mr. Omiku Moses</td>
+      <td>Tel: +256784658816</td>
+      <td>tourism and hospitality</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ROCK SHADOWS INVESTMENTS (U) LTD</td>
+      <td>Tourism</td>
+      <td>Mr. Kana Malisu Moses</td>
+      <td>Email: kanamalisu@gmail.com</td>
+      <td>Hospitality Service and Tourism</td>
+      <td>Koboko</td>
+      <td>Ushs 1,600,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA DISTRICT LOCAL GOVERNMENT</td>
+      <td>Services (Education, Medical &amp; Finance)</td>
+      <td>Ms. Agani Rebecca</td>
+      <td>Tel: +256774564910</td>
+      <td>Information Center for Tourism opportunities in Arua</td>
+      <td>Arua</td>
+      <td>Ushs 25,000,000</td>
+</tr>
+    <tr>
+      
+      <td>IGABA GOJURU COMMUNITY EVENTS MANAGEMENT PROJECT</td>
+      <td>Tourism</td>
+      <td>Mr. Acile Ismail Musa</td>
+      <td>Tel: +256782523574 Email: igabagojuru@gmail.com</td>
+      <td>Events management training, monitoring and evaluation</td>
+      <td>Arua</td>
+      <td>Ushs 142,500,000</td>
+</tr>
+    <tr>
+      
+      <td>WEST NILE HOTEL AND APPARTMENTS</td>
+      <td>Tourism</td>
+      <td>Mr. Wamala Emmanuel &amp; Mr Asuma Geoffrey</td>
+      <td>Not provided</td>
+      <td>Tourism, Hospitality business</td>
+      <td>Arua</td>
+      <td>Ushs 2,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MARACHA CATHOLIC INNITIATIVE FOR DEVELOPMENT</td>
+      <td>Tourism</td>
+      <td>Mr. Mawa John</td>
+      <td>Tel: +256772372473</td>
+      <td>Housing and Hospitality Industry</td>
+      <td>Maracha</td>
+      <td>Ushs 1,500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NYAKUA BA OA BASI ENT LTD</td>
+      <td>Tourism</td>
+      <td>Mr. Mawa John</td>
+      <td>Tel: +256772372473</td>
+      <td>Guest House</td>
+      <td>Maracha</td>
+      <td>Ushs 416,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LIFE CONCERN</td>
+      <td>Tourism</td>
+      <td>MR. Anyolitho Willam</td>
+      <td>P.O Box 70, Paidha</td>
+      <td>Socio Economic development and community Tourism</td>
+      <td>Zombo</td>
+      <td>Ushs1,700,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SAFEWAY COACH SERVICES</td>
+      <td>Tourism</td>
+      <td>MR.SAKIA B ADILE</td>
+      <td>Tel: +2567765472888 Email: safewaycoach@gmail.com</td>
+      <td>Transport services</td>
+      <td>Arua</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>HEARTLAND COTTAGES</td>
+      <td>Tourism</td>
+      <td>Rev Fr.Dr. Odubuker Picho Epiphany</td>
+      <td>Tel: +256772467112</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Arua</td>
+      <td>Ushs 1,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>CANOPUS MOTEL LTD</td>
+      <td>Tourism</td>
+      <td>Assoc.Prof Simon K Anguma</td>
+      <td>Tel: +256774535728 Email: simonanguma@gmail.com</td>
+      <td>Hotel and Hospitality Industry</td>
+      <td>Arua</td>
+      <td>USD 300,000</td>
+</tr>
+    <tr>
+      
+      <td>JORDAN BREEZE HOTEL</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Jordan Breeze hotel</td>
+      <td>Not provided</td>
+      <td>Events management and catering services</td>
+      <td>Nebbi</td>
+      <td>Ushs 450,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARTINA</td>
+      <td>Information and Communications Technology (ICT)</td>
+      <td>Ms. Martina Adubango</td>
+      <td>Not provided</td>
+      <td>Design and Branding Services</td>
+      <td>Nebbi</td>
+      <td>Ushs35,000,000</td>
+</tr>
+    <tr>
+      
+      <td>WOD,OKORO AGRO INVESTMENT VENTURES</td>
+      <td>General Business Services</td>
+      <td>Mr. Paschal Rocks Apenjonga Angala</td>
+      <td>Tel: +256772994475 Email: rockschal.angala@gmail.com</td>
+      <td>Produce business project</td>
+      <td>Zombo</td>
+      <td>Ushs 30,000,000</td>
+</tr>
+    <tr>
+      
+      <td>UNISEX COMPLEX SALOON</td>
+      <td>General Business Services</td>
+      <td>Mr: Charles Boston Angama</td>
+      <td>Tel: +256782510032</td>
+      <td>Saloon Business Enterprise</td>
+      <td>Adjumani</td>
+      <td>Ushs 10,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MADOBA SERVICE UGANDA LTD</td>
+      <td>General Business Services</td>
+      <td>Mr. Ben Anyama</td>
+      <td>Tel: +256772541807; +256772433000; +256758529277</td>
+      <td>Hard ware supplies</td>
+      <td>Adjumani</td>
+      <td>Ushs 240,000,000</td>
+</tr>
+    <tr>
+      
+      <td>UGANDA NATURAL FOOD BANK PROJECT</td>
+      <td>General Business Services</td>
+      <td>Uganda Natural food Bank Project</td>
+      <td>Not provided</td>
+      <td>Social Enterprise Project</td>
+      <td>Maracha</td>
+      <td>Ushs 2,540,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LIVESTOCK FARMING PROJECT</td>
+      <td>Agriculture</td>
+      <td>Mr. Moses Anyama</td>
+      <td>Tel: +256773285845</td>
+      <td>Livestock farming project</td>
+      <td>Adjumani</td>
+      <td>Ushs 15,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LONGSTORY AGRO INPUTS</td>
+      <td>Agriculture</td>
+      <td>Mr. Adrabo Stanley</td>
+      <td>Tel: +256785499496</td>
+      <td>Provision of Agricultural inputs</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>REAL ESTATE ARUA</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Christopher Acidri</td>
+      <td>Tel: +256783527537; +256750197857</td>
+      <td>Real Estate for commercial rental space</td>
+      <td>Arua</td>
+      <td>USD 10,000,000</td>
+</tr>
+    <tr>
+      
+      <td>AD ELECTRICALS AND STATIONERY POINT</td>
+      <td>General Business Services</td>
+      <td>Mr. Godfrey Aneku</td>
+      <td>Tel: +256786565715</td>
+      <td>Stationary and electrical project</td>
+      <td>Maracha</td>
+      <td>Ushs 140,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DADZ PUB AND SONS RESTURANT</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr. Moses Omviku</td>
+      <td>Tel: +256784658816</td>
+      <td>Resturant and bar project</td>
+      <td>Maracha</td>
+      <td>Ushs 300,000,000</td>
+</tr>
+    <tr>
+      
+      <td>DEMAK ENTERPRISES</td>
+      <td>Agriculture</td>
+      <td>Mr Geoffrey Debo</td>
+      <td>Tel: +256774496666; +256755596666</td>
+      <td>Provision of Agricultural inputs</td>
+      <td>Maracha</td>
+      <td>Ushs 150,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MINI PRICE SHOP</td>
+      <td>General Business Services</td>
+      <td>Mr. Cyril Omviti</td>
+      <td>Tel: +256785183450</td>
+      <td>General mechandise Shop</td>
+      <td>Maracha</td>
+      <td>Ushs 100,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NYAKUA ,BA OA ,BASI ENTERPRISES LTD</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. John Mawa</td>
+      <td>Tel: +256772372473</td>
+      <td>Real Estate Development</td>
+      <td>Maracha</td>
+      <td>Ushs 416,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NYAKUA ,BA OA ,BASI ENTERPRISES LTD</td>
+      <td>Finance and Banking</td>
+      <td>Mr. John Mawa</td>
+      <td>Tel: +256772372473; +256752421651 Email: nyakuabaoabasi@gmail.com</td>
+      <td>Microfinance Money Lending projcet and transportation</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ADAM AND FRIENDS STATIONERY BOOK SHOP</td>
+      <td>General Business Services</td>
+      <td>Mr. Edward Andruga</td>
+      <td>Tel: +256772933864; +256774142836</td>
+      <td>Expanding Stationery business Project</td>
+      <td>Maracha</td>
+      <td>Ushs45,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NGARU-ENDOBO ENTERPRISES</td>
+      <td>Manufacturing &amp; Industry</td>
+      <td>Ms. Roseline Parmu</td>
+      <td>Tel: +256777280055</td>
+      <td>Aggricultural value addition</td>
+      <td>Nebbi</td>
+      <td>Ushs 45,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OBONGA ENGINEERING SUPPLIES LTD</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Salim Mohammed Tibo</td>
+      <td>Not provided</td>
+      <td>Real Estate and Hotel Accomodation</td>
+      <td>Arua</td>
+      <td>Ushs 250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ICT SUPPORT SERVICES</td>
+      <td>Information and Communications Technology (ICT)</td>
+      <td>Mr. Victor Onguench</td>
+      <td>Not provided</td>
+      <td>ICT Support services</td>
+      <td>Nebbi</td>
+      <td>Ushs 68,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NEBBI BUSINESS ASSOCIATION</td>
+      <td>Water &amp; Sanitation</td>
+      <td>Nebbi business Association</td>
+      <td>Not provided</td>
+      <td>Provision of equipment for removing, transportation and safe disposal of refuse</td>
+      <td>Nebbi</td>
+      <td>Ushs338,600,000</td>
+</tr>
+    <tr>
+      
+      <td>MANU RESTORANT</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr. Emmanuel Ocia</td>
+      <td>Tel: +256780680326</td>
+      <td>Provision of Resturant Services</td>
+      <td>Maracha</td>
+      <td>Ushs 50,000,000</td>
+</tr>
+    <tr>
+      
+      <td>BIG BROTHER MARACHA PUB AND RESTURANT</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr. Moses Matua</td>
+      <td>Tel: +256782405204</td>
+      <td>Provision of Modern pub and Resturant services</td>
+      <td>Maracha</td>
+      <td>Ushs 380,000,000</td>
+</tr>
+    <tr>
+      
+      <td>CARESTART MEDICAL LABORATORY</td>
+      <td>Health</td>
+      <td>Mr. Eyotre Godfrey</td>
+      <td>Tel: +256785561119; +256756038737 E-mail: eyotregodfrey100@gmail.com</td>
+      <td>Supply of Medical Laboratory Equipments and Reagents</td>
+      <td>Arua</td>
+      <td>UGX: 380,840,000</td>
+</tr>
+    <tr>
+      
+      <td>AGEG&amp; SONS MARACHA PRODUCE DEALERS</td>
+      <td>General Business Services</td>
+      <td>Ms. Josephine Inzikuru</td>
+      <td>Tel: +256774085390</td>
+      <td>General mechandise</td>
+      <td>Maracha</td>
+      <td>Ushs 10,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LDN LABARATORY SERVICES</td>
+      <td>Health</td>
+      <td>LDN Labaratories</td>
+      <td>Not provided</td>
+      <td>Laboratory Equipment</td>
+      <td>Maracha</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA WOMEN ENTREPRENEURS</td>
+      <td>General Business Services</td>
+      <td>Mrs. Caroline Lilly Ocanda</td>
+      <td>Tel: +256772512764; +256702513764</td>
+      <td>General mechandise</td>
+      <td>Arua</td>
+      <td>Ushs 450,000,000</td>
+</tr>
+    <tr>
+      
+      <td>REAL ESTATE SERVICES</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Ignatius Acidri Omelea</td>
+      <td>Tel: +256781438305 Email: acidriignatiusomelea</td>
+      <td>Real Estate for Hostel Services</td>
+      <td>Arua</td>
+      <td>Ushs 810,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NEEDY KIDI SUPPORT (U) LTD</td>
+      <td>General Business Services</td>
+      <td>Needy Kidi Support U Ltd</td>
+      <td>Not provided</td>
+      <td>General mechandise</td>
+      <td>Arua</td>
+      <td>Ushs 8,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>KOBOKO BODA BODA RIDERS NETWORK Co Ltd</td>
+      <td>General Business Services</td>
+      <td>Koboko Boda Boda Riders</td>
+      <td>Email: kobokobodabodaridersnetwork@gmail.com</td>
+      <td>Transport and Microfinance Services</td>
+      <td>Koboko</td>
+      <td>Ushs 10,917,000,000</td>
+</tr>
+    <tr>
+      
+      <td>WESTNILE ART AND CRAFT DEVELOPMENT CENTRE</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr Dradri Yazidi</td>
+      <td>Tel: +256772619105</td>
+      <td>Eco Art, response to a changing Westnile Environment</td>
+      <td>Arua</td>
+      <td>Ushs 410,750,000</td>
+</tr>
+    <tr>
+      
+      <td>IGABA GOJURU COMMUNITY ASSOCIATION LTD</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr, Acile Ismail Musa</td>
+      <td>Tel: +256782523574 Email: igabagojuru@gmail.com</td>
+      <td>Events management project</td>
+      <td>Arua</td>
+      <td>Ushs 328,900,000</td>
+</tr>
+    <tr>
+      
+      <td>MODERN FARMING SYSTEM PROJECT, YUMBE</td>
+      <td>Agriculture</td>
+      <td>Dr. Ben Obwoch</td>
+      <td>Tel: +256782287860 Email: orinjijaben@gmail.com</td>
+      <td>Modern farming system project</td>
+      <td>Yumbe</td>
+      <td>Ushs 1,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ROCK SHADOWS INVESTMENTS (U) LTD</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Kana Malisu Moses</td>
+      <td>Tel: +256782435122 Email: kanamalisu@gmail.com/ kanamalson@hotmail.com</td>
+      <td>Real Estate for commercial rental space</td>
+      <td>Koboko</td>
+      <td>Ushs 3,900,000,000</td>
+</tr>
+    <tr>
+      
+      <td>GENERAL ENTERPRISE</td>
+      <td>General Business Services</td>
+      <td>Mr. Angundru Peter Abasi</td>
+      <td>Tel: +256782366685, +256772392211</td>
+      <td>General business services</td>
+      <td>Arua</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>BORN FREE TECHNOLOGIES</td>
+      <td>Information and Communications Technology (ICT)</td>
+      <td>Mr. Sakia B Adile</td>
+      <td>Tel: +256776547288</td>
+      <td>Media Broadcasting</td>
+      <td>Arua</td>
+      <td>Ushs 1,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SACCO</td>
+      <td>Finance and Banking</td>
+      <td>Mr. Atama Swali</td>
+      <td>Not provided</td>
+      <td>Savings and credit services</td>
+      <td>Arua</td>
+      <td>Ushs 617,200,000</td>
+</tr>
+    <tr>
+      
+      <td>FOOD SUPPLIES</td>
+      <td>Tourism &amp; Hospitality</td>
+      <td>Mr. Ocia Emmanuel</td>
+      <td>Tel: +256780680326</td>
+      <td>Supply of food to local government staff and the local Market</td>
+      <td>Maracha</td>
+      <td>Ushs 25,000,000</td>
+</tr>
+    <tr>
+      
+      <td>PURENTIA VOCATIONAL INVESTMENT</td>
+      <td>Education</td>
+      <td>Mr. Gift Sakaya</td>
+      <td>Tel: +256777348600; +256794644678</td>
+      <td>Technical education and contract works to the public</td>
+      <td>Koboko</td>
+      <td>Ushs 5,633,000,000</td>
+</tr>
+    <tr>
+      
+      <td>PURENTIA VOCATIONAL INVESTMENT</td>
+      <td>Education</td>
+      <td>Mr. Gift Sakaya</td>
+      <td>Tel: +256777348600; +256794644678 email: purentia.skills@gmail.com</td>
+      <td>Technical education and contract works to the public</td>
+      <td>Koboko</td>
+      <td>Ushs 5,633,000,000</td>
+</tr>
+    <tr>
+      
+      <td>SILVERSTAR COMMUNITY ASSOCIATION (SILCA)</td>
+      <td>Education</td>
+      <td>Mr. Bakole Mansur</td>
+      <td>Tel: +256782784579</td>
+      <td>Carpentry Trainings</td>
+      <td>Arua</td>
+      <td>Ushs 200,360,000</td>
+</tr>
+    <tr>
+      
+      <td>MULTINATIONAL INVESTMENTS LTD</td>
+      <td>Education</td>
+      <td>Mr. Geriga Geoffrey</td>
+      <td>Tel: +256782036515; +256702345888 Email: multinationalinvestments@gmail.com ; gerigageoffrey@gmail.com</td>
+      <td>Expansion of Technical training Center in Arua</td>
+      <td>Arua</td>
+      <td>USD 281,050</td>
+</tr>
+    <tr>
+      
+      <td>SIMPLE POVERTY ACTION</td>
+      <td>Education</td>
+      <td>Mr. Stanley Simple Yiacia</td>
+      <td>Tel: 0752954548; +2560781623800</td>
+      <td>Provision of Vocational Skills</td>
+      <td>Arua</td>
+      <td>USD 266,411</td>
+</tr>
+    <tr>
+      
+      <td>KINGS AND QUEENS PRIMARY SCHOOL</td>
+      <td>Education</td>
+      <td>Mr. Fred Odutchu Mudokio &amp; Mrs. Nyemera Doreen</td>
+      <td>Email: queensandkingsps@gmail.com Tel: +256 773222220; +2560758 020784; +256 777 261424</td>
+      <td>Provision of Primary Education</td>
+      <td>Koboko</td>
+      <td>USD 5,500,000</td>
+</tr>
+    <tr>
+      
+      <td>ODAMA AND BROTHERS (U) Ltd</td>
+      <td>Education</td>
+      <td>Mr. Sam Drabo</td>
+      <td>Email: drabosam2014@gmail.com; odamamoris3@gmail.com Tel: +256772320891; +256784505060</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>USD 362,300</td>
+</tr>
+    <tr>
+      
+      <td>PALM TREE ACADEMY (U) Ltd</td>
+      <td>Education</td>
+      <td>Palm Tree Academy</td>
+      <td>Not provided</td>
+      <td>Provision of Education Services</td>
+      <td>Arua</td>
+      <td>USD 220,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA SPORTS ACADEMY</td>
+      <td>Education</td>
+      <td>Dr. Mubarak Khalfan</td>
+      <td>Tel: +256 772 381922</td>
+      <td>Training academy for sports</td>
+      <td>Arua</td>
+      <td>USD 2,568,750</td>
+</tr>
+    <tr>
+      
+      <td>DENTAL AUXILLARY TRAINING</td>
+      <td>Education</td>
+      <td>Dr. Philip Madira Drajole</td>
+      <td>Not provided</td>
+      <td>an Auxiliary Dental personnel Training school</td>
+      <td>Arua</td>
+      <td>Ushs 700,000,000</td>
+</tr>
+    <tr>
+      
+      <td>LEJU MODERN EDUCATION CENTER</td>
+      <td>Education</td>
+      <td>Mr. Phillip Draonzi</td>
+      <td>Tel: +256 773217339</td>
+      <td>Provision of Primary Education</td>
+      <td>Arua</td>
+      <td>USD 1,765,000</td>
+</tr>
+    <tr>
+      
+      <td>Twaha Construction and Transportation</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Twaha Agarile</td>
+      <td>Tel: +256 772381274; E-mail: Agariletwaha@gmail.com</td>
+      <td>Construction and Transportation</td>
+      <td>Arua</td>
+      <td>UGX 20,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>RHEMA Engineering Co (U) Ltd</td>
+      <td>Construction and Engineering Services</td>
+      <td>Mr. Ronald Debo</td>
+      <td>P.O.Box 123,Arua, Uganda.  Tel: +256 782832628; +256 774128426; +256 773034972. E-mail: rhemaengineeringcoltd@gmail.com. Website: www.rhemamedicalgroup.com</td>
+      <td>ConstructionIndustry</td>
+      <td>Arua</td>
+      <td>USD 1,165,920</td>
+</tr>
+    <tr>
+      
+      <td>Ijosiga &amp; Atima Stone Quarrying Project</td>
+      <td>Mining and Quarrying</td>
+      <td>Mr. Mahmud Ijosiga Bakole &amp; Mr. JAckson Atima</td>
+      <td>Tel: +256 776934705; +256 772697472. E-mail: ijosigamdenterprise@gmail.com</td>
+      <td>Stone Quarrying Project</td>
+      <td>Arua</td>
+      <td>USD 504,461</td>
+</tr>
+    <tr>
+      
+      <td>MT WATI VOCATIONAL TRAINING CENTER</td>
+      <td>Education</td>
+      <td>Mr. Richard Andama Ferua</td>
+      <td>Email: a.ferua@gmail.com Tel: +256 788 222181; +2567827724612</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>USD 1,565,000</td>
+</tr>
+    <tr>
+      
+      <td>HOME WAY TRADERS</td>
+      <td>Mining and Quarrying</td>
+      <td>Home Way Traders</td>
+      <td>Tel: +256 782286992; +256 754286992; +256 772788289</td>
+      <td>Stone Quarrying Project</td>
+      <td>Arua</td>
+      <td>UGX 2,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>Seraphine Stone Quarrying Project</td>
+      <td>Mining and Quarrying</td>
+      <td>Mr. Seraphine Munguleni</td>
+      <td>Tel: +256 784146787</td>
+      <td>Stone Quarrying Project</td>
+      <td>Arua</td>
+      <td>UGX 3,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>EDENES FAIR TRADERS Ltd</td>
+      <td>Construction and Engineering Services</td>
+      <td>Edenes Fair</td>
+      <td>P.O.Box 1, Arua, Uganda. TEl: +256 772256997 E-mail: edenesfair@gmail.com</td>
+      <td>Carpentry Workshop for making bee hives and other farm implements</td>
+      <td>Arua</td>
+      <td>UGX 250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NILE INSTITUTE OF VOCATIONAL STUDIES</td>
+      <td>Education</td>
+      <td>Mr. Wilson Orio and Mr. Swadick Abas Abdisud</td>
+      <td>Email: ilsonorio.nk@gmail.com; swadik3@gmail.com Tel: +256784650167; +256752422550;+256752934548; +256786397853</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>USD 253,928.14</td>
+</tr>
+    <tr>
+      
+      <td>AFRI-ACTION CARPENTRY AND CONSTRUCTION WORKSHOP AND VOCATIONAL CENTER</td>
+      <td>Education</td>
+      <td>Mr. Jafari Kajujube</td>
+      <td>Tel: +256773325371</td>
+      <td>Provision of Carpentry Vocational Education Services</td>
+      <td>Yumbe</td>
+      <td>USD 64,935</td>
+</tr>
+    <tr>
+      
+      <td>MA ECORA YOUTH CENTER</td>
+      <td>Education</td>
+      <td>Mrs. Molly Monday Ndezo</td>
+      <td>Email: maecora2000@gmail.com</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 454,100,000</td>
+</tr>
+    <tr>
+      
+      <td>NYADRI VOCATIONAL DEVELOPMENT ACADEMY</td>
+      <td>Education</td>
+      <td>Mr. David Wollo</td>
+      <td>Tel: +256770518254</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Maracha</td>
+      <td>Ushs 100,000,000</td>
+</tr>
+    <tr>
+      
+      <td>BLESSED JUNIOR NURSERY &amp;PRIMARY SCHOOL</td>
+      <td>Education</td>
+      <td>Mr.Vincent Adriko</td>
+      <td>Tel: +256773798481</td>
+      <td>Provision of Nursery &amp; Primary Education</td>
+      <td>Maracha</td>
+      <td>Ushs 335,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ST PAUL TECHNICAL INSTITUTE</td>
+      <td>Education</td>
+      <td>Mr Joel Candia</td>
+      <td>Email: Candiajoel5@gmail.com</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 2,150,000,000</td>
+</tr>
+    <tr>
+      
+      <td>CABE INVESTMENTS Ltd</td>
+      <td>Education</td>
+      <td>Mr. Emmanuel Banya</td>
+      <td>Email: tcbanya150@gmail.com</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Koboko</td>
+      <td>USD 207,000</td>
+</tr>
+    <tr>
+      
+      <td>GOLDEN TREASURE NURSERY &amp; PRIMARY SCHOOL</td>
+      <td>Education</td>
+      <td>Mr Elia Alitia , Mr Joachim Titre, and Mr. Boo Akim Amuku</td>
+      <td>Email: elly2016@gmail.co Tel: +256772914622; +256704750200</td>
+      <td>Provision of Education Services</td>
+      <td>Arua</td>
+      <td>USD 694,445</td>
+</tr>
+    <tr>
+      
+      <td>STEBRINO CONSULTS(U) Ltd</td>
+      <td>Education</td>
+      <td>Ms. Christine Angukoru</td>
+      <td>Email: Stebrinoconsultants@gmail.com</td>
+      <td>Provision of Education Services.</td>
+      <td>Moyo</td>
+      <td>Ushs 750,000,000</td>
+</tr>
+    <tr>
+      
+      <td>OKOKORO PARENTS NURSERYAND PRIMARY SCHOOL</td>
+      <td>Education</td>
+      <td>Mr. Habert Elias Lema</td>
+      <td>Email lemahekar@yahoo.com Tel +256783406111</td>
+      <td>Provision of Nursery and primary  Education Services</td>
+      <td>Maracha</td>
+      <td>Ushs 350,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ST JOSEPH&#039;S NURSERY AND PRIMARY SCHOOL PROJECT</td>
+      <td>Education</td>
+      <td>Mr. Joseph Opendi</td>
+      <td>Tel: +256782841915</td>
+      <td>Provision of  Education Services</td>
+      <td>Adjumani</td>
+      <td>USD 1,080,000</td>
+</tr>
+    <tr>
+      
+      <td>NILE SPRING JUNIOR SCHOOLS</td>
+      <td>Education</td>
+      <td>Mr. Emmanuel Opeli Leku</td>
+      <td>Email: nilespringjunior@gmail.com Tel: +256772851420; +256392948638</td>
+      <td>Provision of Education Services</td>
+      <td>Adjumani</td>
+      <td>USD 1,030,000</td>
+</tr>
+    <tr>
+      
+      <td>ELKEZY CIVIL ENGINEERING AND CONSTRUCTION Co Ltd.</td>
+      <td>Education</td>
+      <td>Mr. Elvis Dan Drasiga</td>
+      <td>Email: elkezyconstructions@gmail.com</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 820,115.800</td>
+</tr>
+    <tr>
+      
+      <td>ELKEZY CIVIL ENGINEERING AND CONSTRUCTION Co Ltd.</td>
+      <td>Education</td>
+      <td>Mr. Elvis Dan Drasiga</td>
+      <td>Email: elkezyconstructions@gmail.com Tel: +256772832000</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 820,115.800</td>
+</tr>
+    <tr>
+      
+      <td>NEW BEGINNING VOCATIONAL CENTER</td>
+      <td>Education</td>
+      <td>Mrs. Caroline Lilly Ocanda</td>
+      <td>Email: carolocanda@yahoo.com Tel: +256772513764; +256702513764</td>
+      <td>Provision of Vocational Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA ACCADEMY</td>
+      <td>Education</td>
+      <td>Mr. Dickson Adomati</td>
+      <td>Email: adomatidickson@gmail.com Tel: 0772903868</td>
+      <td>Provision of Secondary Education Services</td>
+      <td>Arua</td>
+      <td>Ushs 20,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>GOLDEN COLLEGE,</td>
+      <td>Education</td>
+      <td>Mr. Elia Alia</td>
+      <td>Email: elly2016@gmail.com</td>
+      <td>Construction and Provision of Secondary Education Services</td>
+      <td>Arua</td>
+      <td>3,646,260,000</td>
+</tr>
+    <tr>
+      
+      <td>GOLDEN COLLEGE,</td>
+      <td>Education</td>
+      <td>Mr. Elia Alia</td>
+      <td>Email: elly2016@gmail.com Tel: +256773126654 ; +256772914622</td>
+      <td>Construction and Provision of Secondary Education Services</td>
+      <td>Arua</td>
+      <td>3,646,260,000</td>
+</tr>
+    <tr>
+      
+      <td>ST CAMILLA NURSERY AND PRIMARY SCHOOL</td>
+      <td>Education</td>
+      <td>Assoc. Prof. Simon K Anguma</td>
+      <td>Email: simonanguma@gmail.com Tel: +256774535728</td>
+      <td>Provision of Early Childhood Education and Primary Education Services</td>
+      <td>Arua</td>
+      <td>USD 500,000</td>
+</tr>
+    <tr>
+      
+      <td>RHEMA MEDICAL GROUP</td>
+      <td>Health</td>
+      <td>Mr. Ronald Debo</td>
+      <td>Email: rhemamedicalgroup1@gmail.com Tel: +2567832628</td>
+      <td>Health Service</td>
+      <td>Arua</td>
+      <td>USD 2,805,252</td>
+</tr>
+    <tr>
+      
+      <td>CARLOS BROAD INVESTMENTS Ltd</td>
+      <td>Health</td>
+      <td>Mr. Charles Amaku</td>
+      <td>acchallie5@gmail.com Tel: +256788101826</td>
+      <td>Reference Medical Diagnostic Center</td>
+      <td>Koboko</td>
+      <td>USD 350,000</td>
+</tr>
+    <tr>
+      
+      <td>BONAVENTURE DENTAL CARE INVESTMENT</td>
+      <td>Health</td>
+      <td>Dr.Rome Ndiri Bayo</td>
+      <td>Email: bonadentalcare@gmail.com Tel: +256772320068; +256751320068</td>
+      <td>Oral Health Services</td>
+      <td>Arua</td>
+      <td>Ushs 2,250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>POLE CLINICAL LABORATORY</td>
+      <td>Health</td>
+      <td>Mr. Philliam Aleti Aleeziabo</td>
+      <td>Email: aletiphilliam@gmail.com</td>
+      <td>Provision of Clinical Diagnostic Center</td>
+      <td>Gulu</td>
+      <td>USD 87,500</td>
+</tr>
+    <tr>
+      
+      <td>CLINICAL LABORATORY AND RADIOLOGY UNIT</td>
+      <td>Health</td>
+      <td>Mr. Philliam Aleti Aleeziabo</td>
+      <td>Email: aletiphilliam@gmail.com Tel +256787818528; +256701618280</td>
+      <td>Provision of Clinical Laboratory and Radiology unit</td>
+      <td>Arua</td>
+      <td>USD 150,000</td>
+</tr>
+    <tr>
+      
+      <td>ST DOMINIC BASIC HEALTH SERVICES</td>
+      <td>Health</td>
+      <td>Mr. Dominic Illa</td>
+      <td>Email: illadominic2008@yahoo.co.uk</td>
+      <td>Provision of Basic Health Services</td>
+      <td>Moyo</td>
+      <td>Ushs 15,000,000,000</td>
+</tr>
+    <tr>
+      
+      <td>EXODUS FAMILY DRUG SHOP</td>
+      <td>Health</td>
+      <td>Ms. Regina Driciru</td>
+      <td>Tel:+256772994949</td>
+      <td>Provision of Health Services</td>
+      <td>Maracha</td>
+      <td>Ushs 250,000,000</td>
+</tr>
+    <tr>
+      
+      <td>EAST AFRICA PREMIER HOSPITAL PROJECT</td>
+      <td>Health</td>
+      <td>MR. George Eriga &amp; Dr. Seraphine Adibaku</td>
+      <td>Not provided</td>
+      <td>Specialised Medical Service Provision</td>
+      <td>Arua</td>
+      <td>USD 1,600,000</td>
+</tr>
+    <tr>
+      
+      <td>EXPRESS HEALTH SERVICES</td>
+      <td>Health</td>
+      <td>Mr. Hassan Mohammed Awule</td>
+      <td>Email: hassanawule@yahoo.com</td>
+      <td>Provision of quality and Express health services</td>
+      <td>Koboko</td>
+      <td>Ushs 46,600,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NYAMIO HEALTH CENTRE III INVESTMENTS</td>
+      <td>Health</td>
+      <td>Mr. Isaac Detibo</td>
+      <td>Email: detiboisaac3232@gmail.com Tel: +256784655688</td>
+      <td>Provision of Health Services</td>
+      <td>Arua</td>
+      <td>Ushs 1,500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MEDICAL CENTER IN YUMBE</td>
+      <td>Health</td>
+      <td>Dr. Ben Obwoch</td>
+      <td>Tel: +256782287860 Email: orinjijaben@gmail.com</td>
+      <td>A fully-fledged medical center</td>
+      <td>Yumbe</td>
+      <td>Ushs 4,457,000,000</td>
+</tr>
+    <tr>
+      
+      <td>NURSES AND MIDWIVES TOOLKIT DESIGHNER</td>
+      <td>General Business Services</td>
+      <td>Mr. Acidri Arnold</td>
+      <td>acidriarnold@gmail.com</td>
+      <td>Desighning Midwifes and Nurses toolkit</td>
+      <td>Arua</td>
+      <td>Ushs 139,288,500</td>
+</tr>
+    <tr>
+      
+      <td>HEALTH INVESTMENT COMPANION CLINIC</td>
+      <td>Health</td>
+      <td>Dr. Mbarack Khalfan</td>
+      <td>Tel: +256772381922</td>
+      <td>Provision of Health Services</td>
+      <td>Arua</td>
+      <td>USD 300,000</td>
+</tr>
+    <tr>
+      
+      <td>MAP PHERMACUTICAL Co. Ltd</td>
+      <td>Health</td>
+      <td>Dr.Emma Panzi Mukhokosi</td>
+      <td>Tel: +256784670812</td>
+      <td>Pharmacuticals</td>
+      <td>Arua</td>
+      <td>Ushs 500,000,000</td>
+</tr>
+    <tr>
+      
+      <td>MUNI UNIVERSITY TEACHING HOSPITAL</td>
+      <td>Health</td>
+      <td>Muni University</td>
+      <td>Email: us@muni.ac.ug</td>
+      <td>Establishment of Muni Teaching Hospital</td>
+      <td>Arua</td>
+      <td>Ushs 35,000,000</td>
+</tr>
+    <tr>
+      
+      <td>ARUA INTERNATIONAL ISLAMIC HOSPITAL</td>
+      <td>Health</td>
+      <td>Arua International Islamic Hospital</td>
+      <td>Not provided</td>
+      <td>Health Investment</td>
+      <td>Arua</td>
+      <td>USD 40,000,000</td>
+</tr>
+    <tr>
+      
+      <td>EGEG APARTMENTS LIMITED ARUA</td>
+      <td>General Business Services</td>
+      <td>Mr. Eyotre Godfrey</td>
+      <td>Tel: +256785561119; +256756038737; E-mail: eyotregodfrey100@gmail.com</td>
+      <td>Establishment of Rental Apartments</td>
+      <td>Arua</td>
+      <td>USD 300000</td>
+</tr>
+    <tr>
+      
+      <td>A&#039;P GENERATIONS LIMITED</td>
+      <td>Agriculture</td>
+      <td>Mr. Amade Pascal</td>
+      <td>+256772529568; +256751298280</td>
+      <td>Coffee growing and animal rearing project</td>
+      <td>Maracha</td>
+      <td>USD 100000</td>
+</tr>
+    <tr>
+      
+      <td>IKOE PHARMACEUTICAL SUPPLIES LTD</td>
+      <td>Health</td>
+      <td>Mr. Ezangu Isaac and Mr. Ayikobua Cosmas</td>
+      <td>Tel: +256773792508/783241362; +256783164446/751789034</td>
+      <td>Supply and Delivery of Medicine and Medical equipment to the community</td>
+      <td>Arua</td>
+      <td>USD 250000</td>
+</tr>
+</tbody>
+
+</table>
+    <section >
+      
+        <p>
+        <h5 style="text-align: center; color:blue;"><b>Disclaimer</b></h5>This publication has been prepared for general guidance on matters of interest only, and does not constitute professional advice.<br>
+        You should not act upon the information contained in this publication without obtaining specific
+        professional advice.<br>
+        No representation or warranty (express or implied) is given as to the accuracy or completeness of
+        the information contained in this publication and, to the extent permitted by law, <br>
+        Muni Univeristy Business Incubation Centre does not accept or assume any
+        liability,responsibility or duty of care for any consequences of you or anyone else acting,<br>or refraining to act, in reliance
+        on the information contained in this publication or for any decision based on it.
+        </p>
+      
+    </section>
+
+</div>
+</div>
+
+
+    
+
+
+
+
+
+    <footer>
+        <p><b>&copy; 2023 Muni University Business Incubation Center</p>
+        <p>Contact us: <a href="mailto:info@businessincubationcenter.com">info@businessincubationcenter.com</a></b></p>
+    </footer>
+
+     <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+  <!-- mdbootstrap scripts-->
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+  <script src="node_modules/mdbootstrap/js/addons/datatables.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+    $('#dtBasicExample').DataTable({
+      "pagingType": "simple_numbers" 
+    });
+    $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
+    
+    <!-- Rest of your content here -->
+</body>
+</html>
+

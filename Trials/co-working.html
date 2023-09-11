@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIC MUNI</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         
+        /* Your CSS styles here */
+        /* For the header and navigation */
+        header {
+
+            background-size: cover;
+            background-position: center;
+            background-color: whitesmoke;
+            color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+
+        header .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .header-content img {
+            width: 100px; /* Adjust the image width as needed */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            text-align: left;
+            position: absolute;
+            left: 12%;
+            color: black;
+        }
+        .social-icons {
+            display: flex;
+            font-size: 50px;
+            gap: 20px;
+
+        }
+        .social-icons a {
+            color: red;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center align items */
+            background-color: #abb8c3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 50px;
+        }
+        nav li:last-child {
+            margin-right: 0;
+        }
+        nav li a {
+            color: orangered;
+            text-decoration: none;
+        }
+        nav li ul {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        nav li:hover ul {
+            display: block;
+        }
+        nav li ul li {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            background-color: darkslateblue;
+            color: white;
+            padding: 2px;
+            border: 0.6px solid #565464;
+            border-radius: 5px;
+        }
+        .search-button {
+            background-color: darkgoldenrod;
+            color: white;
+            border: 0.5px solid #435433;
+            border-radius: 4px;
+            padding: 2px;
+            cursor: pointer;
+        }
+        
+        /* Adjust the logo size */
+        .header img {
+            max-width: 30px; /* Adjust this value as needed */
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 10vh;
+            padding: 30px;
+            margin: 30px;
+            border-top: 10px;
+            border-width: 20px;
+          }
+        .paragraph {
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 150px; /* Set the width of the content area */
+            height: 50px
+        }
+        .h2{
+
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        .content{
+            text-align: center;
+            font-size: 20px;
+        } 
+
+        .space{
+            background-color: orange;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 7px;
+            color: white;
+            border-color: white;
+            cursor: pointer;
+
+        }
+
+        .body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make sure the content stretches to at least the full viewport height */
+            font-size: 50p
+        }
+        .main {
+            flex: 1; /* Fill available space in the flex container */
+            padding: 20px; /* Add padding to give space for content */
+        /* Adjust other styles for header and content here */
+        }
+
+         
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 100vh;
+
+        }
+        .mySlides {
+            display: none;
+            
+           
+        }
+
+        .mySlides img {
+            padding: 20px;
+            margin: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+
+        .slide-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            padding: 10px;
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.4s ease;
+        }
+ 
+        .h3{
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+        .workspace{
+            text-align: center;
+            margin: 2px;
+            padding: 20px;
+
+        }
+        .work{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .box-container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 5%;
+
+         }   
+
+
+        
+        .box {
+            border: 1px solid black;
+            border-radius: 10px 10px 0 10px;
+            padding: 10px;
+            margin-right: 20px;
+            box-sizing: border-box;
+            width: 250px;
+            height: 150px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .box1-container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 5%;
+            padding: 20px;
+         }
+
+        .button{
+            border: 10px solid;
+            border-radius: 5px 5px 5px 5px;
+            background-color: orange;
+            color: white;
+            display: flex;
+            position: relative;
+            left: 40%;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 20px;
+        }  
+
+        .scale{
+            text-align: center;
+            background-color: darkgray;
+            padding: 15px;
+            color: white;
+
+        }
+        .para{
+            text-align: center;
+            font-size: 30px;
+        }
+        .new{
+            text-align: center;
+            padding: 10px;
+
+         }
+
+        .email{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+
+
+        }
+        .p{
+            display: flex;
+            background-color: orange;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            position: revert-layer;
+            left: 80;
+            right:10px;
+            cursor: pointer;
+            margin: 30px;
+            padding: 10px;
+        }   
+
+
+
+        
+
+
+      
+
+        
+        footer {
+            background-color: #32373c;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }       
+        
+    
+    </style>
+   
+</head>
+<body>
+    <header>
+        <img src="th.jpg" alt="Heading Logo" width="10%" height="15%">
+        <h1>MUNI UNIVERSITY<br>BUSINESS INCUBATION<br>CENTER</h1>
+         <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+    </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+                <a href="#">ABOUT US</a>
+                <ul>
+                    <li><a href="historical-background.html">Historical Backround</a></li>
+                    <li><a href="mission.html">Mission,Vision&Core-Value</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">WHAT WE DO</a>
+                <ul>
+                    <li><a href="our-programs.html">Our Programs</a></li>
+                    <li><a href="co-working.html">Co-Working Space</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">IMPACT</a>
+                <ul>
+                    <li><a href="investor.html">Investor</a></li>
+                    
+                    <li><a href="startups.html">StartUps</a></li>
+                    <li><a href="Partners.html">Partners</a></li>
+                </ul>
+            </li>
+            <li><a href="contact-us.html">CONTACT-US</a></li>
+            <li><a href="support-us.html">SUPPORT-US</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+
+        <div class="container">
+    <div class="paragraph">
+        <p>WorkSpace</p>
+    </div>
+</div>
+
+<div class="h2">
+    <h2>Shared Workspaces For Your<br>Productivity and Growth</h2>
+</div>
+
+<div class="content">
+    <p>Our workspaces are designed to give you the ultimate experience of working alongside a <br>community of innovative minds, individually working on a collective goal to strengthen the<br> ecosystem.</p>
+    <p>
+
+We provide office spaces for entrepreneurs/founders of SME businesses, middle-level <br>corporate executives, freelancers & creative artists.</p>
+<p>
+
+Look through our locations & find the coworking space that works for you.
+</p>
+<p>
+
+Having a team meeting or hosting a client? We have got you covered.</p>
+</div>
+
+<div class="container">
+<div class="space">
+    <p><b>Book a Space</b></p>
+
+    </div>
+</div>
+
+
+
+ <section class="slideshow-container">
+        <div class="mySlides">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <!--<h2>Welcome to Our Business Incubation Center</h2>-->
+                    <main>
+        <img src="IMG_20230904_130816_393.jpg" alt="HOME PAGE" 
+        width="900" height="700" align="Center">
+        
+        </div>
+    </div>
+</div>
+        <div class="mySlides">
+            <div class="slide-content">
+                <div class="slide-text">
+                  <!--  <h2>HAVE A LOOK OF OUR STAFF MEMBERS</h2>-->
+        <img src="IMG_20230904_130838_717.jpg" alt="STAFF MEMBERS" 
+        width="900" height="700" align="Center">
+       
+        </div>
+    </div>
+</div>
+        <div class="mySlides">
+            <div class="slide-content">
+                <div class="slide-text">
+                 <!--   <h2>HOW OUR OFFICE IS LOOKING</h2>-->
+                <!--<h2>Welcome to our Hub</h2>-->
+       
+        <img src="IMG_20230904_130859_097.jpg" alt="LOOKING" 
+        width="900" height="700" align="Center">
+        
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="mySlides">
+            <div class="slide-content">
+                <div class="slide-text">
+                   <!-- <h2>HOW OUR OFFICE IS LOOKING</h2>-->
+        <img src="IMG_20230904_130928_612.jpg" alt="OFFICE VIEW" 
+        width="900" height="700" align="Center">
+   
+        </div>
+    </div>
+</div> 
+
+
+
+        <div class="mySlides">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <!--<h2>Our Services Men and Women</h2>-->
+        <img src="IMG_20230904_131014_139.jpg" alt="OUR SERVICES"
+        width="900" height="700" align="Center">
+       
+        </div>
+    </div>
+</div>
+
+
+
+     <div style="text-align: center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+    </main>
+
+    </section>
+
+     <!-- JavaScript for the slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+    </script>
+
+    <div class="h3">
+        <h3>Workspace Locations</h3>
+         <p>We are located at Muni University 2nd Floor room number 3.1 and 3.2.Draonzu Lecture Block</p>
+        
+</div>
+<div class="work">
+    <h3>Work Independently, Not Alone</h3>
+    
+</div>
+
+<div class="box-container">
+  <div class="box">
+    <h3>Box 1</h3>
+      <p>Access to State-of-The-Art Facilities <br>and Technology</p>
+  </div>
+
+  <div class="box">
+         <h3>Box 2</h3>
+      <p>Join a Network of Distinctive People<br> and Companies</p>
+  </div>
+
+  <div class="box">
+         <h3>Box 3</h3>
+      <p>Fast and Reliable 24/7 Broadband <br>Internet Connection</p>
+  </div>
+
+    
+</div>
+
+
+<div class="box1-container">
+  <div class="box">
+    <h3>Box 4</h3>
+      <p>Fully Air-Conditioned with 24/7 <br>Electricity & Kitchenette</p>
+  </div>
+
+  <div class="box">
+         <h3>Box 5</h3>
+      <p>Aesthetically Designed Private<br> & Common Spaces</p>
+  </div>
+
+  <div class="box">
+         <h3>Box 6</h3>
+      <p>Spacious & Digitised Conference <br>and Meeting Rooms</p>
+  </div>   
+</div>
+
+<div class="container">
+<div class="space">
+    <p><b>Book a Space</b></p>
+
+    </div>
+</div>
+
+<div class="scale">
+    <h3>Enabling Innovation and <br>Supporting Development</h3>
+    <button type="button button2">Become Wennovator</button>
+    
+</div>
+
+<div class="para">
+
+<p>If you would like to stay informed on our upcoming events and opportunities</p>
+</div>
+<div class="new">
+    <h3><b>Sign Up For Our <br>Newsletter!</b></h3>
+    
+</div>
+
+<div class="container">
+<div class="email">
+    <p><b>Enter your email address</b></p>
+
+    </div>
+    <div class="p">
+        <p>Join Now</p>
+        
+    </div>
+    
+</div>
+
+
+   
+
+    
+
+
+
+
+
+    <footer>
+        <p><b>&copy; 2023 Muni University Business Incubation Center</p>
+        <p>Contact us: <a href="mailto:info@businessincubationcenter.com">info@businessincubationcenter.com</a></b></p>
+    </footer>
+    
+    <!-- Rest of your content here -->
+</body>
+</html>
+

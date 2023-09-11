@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIC MUNI</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+         
+        /* Your CSS styles here */
+        /* For the header and navigation */
+        header {
+            /*background-image:url("IMG_20230822_151417_762.jpg" );*/
+            background-size: cover;
+            background-position: center;
+            background-color: whitesmoke;
+            color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+
+        header .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .header-content img {
+            width: 300px; /* Adjust the image width as needed */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            text-align: left;
+            position: absolute;
+            left: 12%;
+            color: black;
+        }
+        .social-icons {
+            display: flex;
+            gap: 20px;
+
+        }
+        .social-icons a {
+            color: red;
+            font-size: 50px;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center align items */
+            background-color: #abb8c3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 50px;
+        }
+        nav li:last-child {
+            margin-right: 0;
+        }
+        nav li a {
+            color: orangered;
+            text-decoration: none;
+        }
+        nav li ul {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        nav li:hover ul {
+            display: block;
+        }
+        nav li ul li {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+        
+        }
+        .search-input {
+            background-color: darkslateblue;
+            color: white;
+            padding: 10px;
+            border: 0.6px solid #565464;
+            border-radius: 5px;
+        }
+        .search-button {
+
+            background-color: darkgoldenrod;
+            color: white;
+            border: 0.5px solid #435433;
+            border-radius: 4px;
+            padding: 5px 8px;
+            cursor: pointer;
+
+        }
+        
+        /* Adjust the logo size */
+        .header img {
+            max-width: 30px; /* Adjust this value as needed */
+            height: auto;
+        }
+
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 10vh;
+            padding: 30px;
+            margin: 30px;
+            border-top: 10px;
+            border-width: 20px;
+          }
+        .paragraph {
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 150px; /* Set the width of the content area */
+            height: 50px
+            
+
+
+        }
+        .h2{
+
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        .content{
+            text-align: center;
+            font-size: 20px;
+
+        }
+        .img{
+            text-align: center;
+            
+        } 
+
+        .h3{
+            margin: 0;
+            font-size: 30px;
+            text-align: left;
+            position: relative;
+            left: 12%;
+            color: black;
+
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 5%;
+            
+
+
+           
+           
+        }
+        .box {
+            border: 1px solid black;
+            border-radius: 10px 10px 0 10px;
+            padding: 10px;
+            margin-right: 20px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 150px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            
+        }
+        .image-container{
+            text-align: center;   
+        
+        }
+
+        .image{
+            text-align: center
+            
+        }
+        button{
+            border: 10px solid;
+            border-radius: 5px 5px 5px 5px;
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            display: flex;
+            position: relative;
+            left: 40%;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+    
+
+        .scale{
+            text-align: center;
+            background-color: darkgray;
+            padding: 15px;
+            
+        }
+        .foto{
+            text-align: center;
+            font-size: 25px;
+        }
+        .new{
+            text-align: center;
+            padding: 20px;
+        }
+        .email{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 7px;
+
+        }
+        .p{
+            display: flex;
+            font-size: 20px;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            position: revert-layer;
+            left: 80;
+            right:20px;
+            cursor: pointer;
+            margin: 5px;
+        } 
+
+        
+        footer {
+            background-color: #32373c;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }       
+        
+    
+    </style>
+   
+</head>
+<body>
+    <header>
+        <img src="th.jpg" alt="Heading Logo" width="10%" height="15%">
+        <h1>MUNI UNIVERSITY<br>BUSINESS INCUBATION<br>CENTER</h1>
+         <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+
+    </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+                <a href="#">ABOUT US</a>
+                <ul>
+                    <li><a href="historical-background.html">Historical Backround</a></li>
+                    <li><a href="mission.html">Mission,Vision&Core-Value</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">WHAT WE DO</a>
+                <ul>
+                    <li><a href="our-programs.html">Our Programs</a></li>
+                    <li><a href="co-working.html">Co-Working Space</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">IMPACT</a>
+                <ul>
+                    <li><a href="investor.html">Investor</a></li>
+                    
+                    <li><a href="startups.html">StartUps</a></li>
+                    <li><a href="Partners.html">Partners</a></li>
+                </ul>
+            </li>
+            <li><a href="contact-us.html">CONTACT-US</a></li>
+            <li><a href="support-us.html">SUPPORT-US</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button" type="Submit">Search</button>
+        </div>
+    </nav>
+   
+    <div class="container">
+    <div class="paragraph">
+        <p>StartUps</p>
+    </div>
+</div>
+<div class="h2">
+    <h2>Our Programs</h2>
+</div>
+<div class="content">
+    <p>Through our incubation, acceleration and investment-readiness programs,<br> startups and founders are equipped with the skills and knowledge required to build successful businesses.<br> We combine a carefully curated curriculum and years of experience of seasoned mentors to deliver the best experience</p>
+</div>
+
+<div class="img">
+    <img src="IMG_20230822_151417_762.jpg" width="50%" height="40%">
+    
+</div>
+
+<div class="h3">
+    <h3>Empowering You as You<br>Pursue Innovation</h3>
+    
+</div>
+<div class="box-container">
+
+<div class="box">
+    <h2>Box 1</h2>
+  <p>Create a safe haven for innovators to <br>converge and have access to mentors.</p>
+    
+</div>
+
+<div class="box">
+  <h2>Box 2</h2>
+  <p>Train innovators to use various tech <br>skills to solve problems in their locality.</p>
+</div>
+
+<div class="box">
+  <h2>Box 3</h2>
+  <p>Groom these solutions into viable <br>business ventures and create jobs in the process.</p>
+</div>
+</div>
+</section>
+
+<div class="h2">
+    <h2>Wennovation Hub Works With<br>You to Take on The Toughest Challenges</h2>
+    
+</div>
+<div class="image-container">
+    <img src="IMG_20230822_151409_713.jpg" width="60%" height="100%">
+</div>
+<div class="image">
+    <img src="IMG_20230822_140752_303.jpg" width="30%" height="100%">
+    <img src="IMG_20230822_140757_072.jpg" width="30%" height="100%">
+
+    
+</div class='button'>
+
+<button type="button " onclick="showStartupForm()">StartUps Application Form</button>
+
+<div class="scale">
+    <h3>Enabling Innovation and <br>Supporting Development</h3>
+    <button type="button " onclick="becomeWennovator()" >Become Wennovator</button>
+    
+</div>
+<p class="foto">If you would like to Stayinformed on our<br> upcoming events and opportunities</p>
+
+<div class="new">
+    <h3><b>Sign Up For Our <br>Newsletter!</b></h3>
+    
+</div>
+<div class="container">
+<div class="email">
+    <p><b>Enter your email address</b></p>
+
+    </div>
+    <div class="p">
+        <button type="button" onclick="subscribeNewsletter()">Join Now</button>
+        
+    </div>
+    
+</div>
+
+</div>
+ <script>
+    function showStartupForm() {
+      // Add code here to display the startup application form
+      alert("Startup application form will be displayed.");
+    }
+
+    function becomeWennovator() {
+      // Add code here to handle the "Become Wennovator" button click
+      alert("You are now a Wennovator!");
+    }
+
+    function subscribeNewsletter() {
+      // Add code here to handle the newsletter subscription
+      alert("You have subscribed to our newsletter!");
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+    <footer>
+        <p><b>&copy; 2023 Muni University Business Incubation Center</p>
+        <p>Contact us: <a href="mailto:info@businessincubationcenter.com">info@businessincubationcenter.com</a></b></p>
+    </footer>
+    
+    <!-- Rest of your content here -->
+</body> 
+</html>
+

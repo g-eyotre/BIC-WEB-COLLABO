@@ -1,0 +1,1155 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Top Bar Styles */
+.top-bar {
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%; /* Set the width to 100% */
+    padding-bottom: 15px;
+}
+
+.fading-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Adjust right to cover the entire width */
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.5)), url("images/6.jpg"); /* Set the path to your image */
+    background-size: cover; /* Adjust to cover the container */
+    background-position: center; /* Adjust image position */
+    opacity: 0.9; /* Adjust opacity for fading effect */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Set a lower z-index to place it behind other content */
+}
+
+.logo-with-text {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+}
+.logo {
+    margin-right: 10px; /* Adjust spacing between logo and text */
+    height: 50px;
+
+}
+.logo-text {
+    position: relative;
+    font-size: 30px; /* Adjust font size as needed */
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color:  black; /* Set the color to dark green */
+}
+.logo-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0.2));
+    z-index: -1;
+}
+
+.logo img {
+    height: 120px; /* Adjust as needed */
+}
+.social-icons {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 50px; /* Adjust margin to move the social icons to the left */
+}
+.social-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0.2));
+    z-index: -1;
+}
+.social-icons a {
+    display: inline-block;
+}
+.social-icons img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+/* Header and Navigation Styles */
+header {
+    margin-bottom: 60px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    background-color: #0d98ba; /* Adjust colors as needed */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between navigation and search bar */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 20px; /* Adjust padding as needed */
+    margin: 0px; /* Reset margin to ensure no default margin */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+nav ul li a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    background-color: black; /* Color of the underline */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    max-height: 70vh; /* Adjust this value as needed */
+    top: 100%;
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 250px;
+    z-index: 100; /* Adjust the value as needed */
+    opacity: 0; /* Set initial opacity to 0 */
+    visibility: hidden; /* Set initial visibility to hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition effects */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Change opacity to 1 on hover */
+    visibility: visible; /* Change visibility to visible on hover */
+}
+
+.dropdown-content a {
+    visibility: visible;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative; /* Add this to establish a stacking context */
+    z-index: 101; /* Adjust the z-index value higher than dropdown background */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #658CBB;
+}
+div a button {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underlines for the anchor tag */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Style the button on hover */
+div a button:hover {
+    background-color: #333; /* Darken the background color on hover */
+}
+
+/* Style for the main section */
+main {
+    background-color: none;
+    margin-top: -60px ;
+    margin-bottom: 25px ;
+    padding-top: 8px;
+    padding-bottom: 50px; /* Add padding to the bottom */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Style for the additional content container */
+.additional-content {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px; /* Add padding to the bottom */
+    padding-right:5px;
+}
+
+/* Style for the main text container */
+.main-text {
+    margin-top:20px;
+    margin-right: 5px;
+    flex: 1;
+    padding: 60px;
+}
+
+.main-text h2 {
+    color: #454545;
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 0 20px; /* Adjust padding */
+}
+
+.main-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Add margin to the bottom of the paragraph */
+
+}
+
+/* Style for the slide images container */
+.slide-images {
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 300px; /* Add padding to the bottom */
+    flex: 1;
+    position: relative;
+    max-width: 400px; /* Set a maximum width for images if needed */
+
+}
+
+/* Add styles for the images in the slide-images container if needed */
+.slide-images img {
+    padding-right: 0px;
+    border-radius: 15px 50px 30px;
+    margin-top: 0px;
+    padding-top: 5px;
+    max-width: 500px; /* Set a maximum width for images if needed */
+    margin-bottom: 80px;
+    margin-left: auto; /* Move the images closer to the right */
+
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 20s infinite; /* Adjust the animation duration as needed */
+}
+
+
+/* Style for the container */
+.below {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the center statement */
+.center-statement {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for the sub-statement */
+.sub-statement {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width for the content */
+}
+/* Style for the life cycle container */
+.life-cycle {
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for each row of boxes */
+.row {
+    display: flex;
+    justify-content:  center;
+    margin-bottom: 20px;
+}
+
+/* Style for the rectangular boxes */
+.box {
+    border-radius: 30%; /* This creates a circle */
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the numerical information */
+.number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for the step information */
+.info {
+    font-size: 16px;
+}
+.number { 
+    font-size: 25px;
+    color: red;
+    font-family: "Lucida Bright", sans-serif;
+}
+/* Style for the partners and clients section */
+.partners-clients {
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partners-clients h2 {
+    font-family: "calibri", sans-serif;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.partner-images {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent images from breaking to the next line */
+    animation: scrollRightToLeft 20s linear infinite; /* Adjust the animation duration as needed */
+}
+@keyframes scrollRightToLeft {
+    20% {
+      transform: translateX(100%); /* Start from the right edge */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left edge */
+    }
+  }
+
+.partner-images img {
+    height: auto;
+    width: 100px; /* Adjust the maximum width of the images */
+    margin-right: 50px; /* Adjust the spacing between images as needed */
+}
+.footer {
+    background: #0d98ba;
+    margin: 0;
+    box-sizing: border;
+    display: flex;
+    width: 100%;
+    color: black;
+    /* Add other styling as needed */
+}
+.footer div{
+    text-align: center;
+}
+/* Style for the mailing list section */
+
+.useful {
+    padding-top: 50px;
+}
+
+.col-2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 50px;
+    margin-left: 60px;
+}
+
+.footer div h2 {
+    font-size: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-2 p {
+    justify-content: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-left: 0px
+}
+
+.col-2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 input[type="email"] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px ;
+    font-size: 14px;
+    width: 250px;
+}
+.col-1{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 15px;
+}
+.col-1 a{
+    font-size: 17px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px
+}
+form input{
+    width: 600px;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: black;
+    border: 2px solid black;
+    color : white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.col-3{
+    margin-right: 0px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.col-3 p{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.copyright {
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+    color: white; /* Change the color as needed */
+    font-size: 14px;
+  }
+ 
+/* In your styles.css file or inside <style> tags */
+
+
+form button:hover {
+    background-color: red;
+}
+/* Your existing CSS styles */
+
+.background-image {
+    background-image: url("images/22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.about-content  {
+    background-color: none;
+    margin-bottom: 50px;
+}
+
+.about-content section {
+    border-bottom: 2px solid #ccc; /* Add a 2px solid gray border at the bottom of each section */
+    margin-bottom: 20px; /* Add some space between sections */
+    padding-bottom: 20px; /* Add padding at the bottom of each section for separation */
+}
+
+.about-content section:last-child {
+    border-bottom: none; /* Remove the border from the last section to avoid an extra line */
+}
+
+/* Style headings and paragraphs within sections as needed */
+.about-content h {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Style for the Startup Success Stories section */
+.success-stories {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.success-stories h2 {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for the video rows */
+.video-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for individual videos */
+.video {
+    margin: 0 10px;
+}
+
+.video iframe {
+    width: 320px; /* Adjust the width as needed */
+    height: 180px; /* Adjust the height as needed */
+}
+
+/* Style for the impact link */
+.impact-link {
+    margin-top: 20px;
+}
+
+.impact-link a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #87CEEB;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.impact-link a:hover {
+    background-color: #658CBB;
+    color: white;
+}
+/* Style for the custom button */
+.custom-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin-top: 0px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style for the arrow icon */
+.custom-button i {
+    margin-left: 5px; /* Adjust the margin to increase or decrease spacing */
+}
+/* Style the team section */
+.team-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+}
+
+/* Style the team images container */
+.team-images {
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: center;
+}
+
+/* Style individual team members */
+.team-member {
+    padding-left: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style team member images */
+.team-member img {
+    max-width: 400px; /* Ensure images don't exceed their container */
+    height: auto;
+}
+
+/* Style captions at the top and bottom */
+.caption-top,
+.caption-bottom {
+    font-size: 14px;
+}
+
+/* Add spacing between captions */
+.caption-top {
+    margin-bottom: 5px;
+}
+
+.caption-bottom {
+    margin-top: 5px;
+}
+/* Style the gallery section */
+.gallery-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+}
+
+/* Style the team images container */
+.gallery-images {
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: center;
+}
+
+/* Style individual team members */
+.gallery-pic {
+    padding-left: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Style gallery-pic images */
+.resized-image {
+    width: 615px; /* Set the desired width */
+    height: auto; /* Set the desired height */
+}
+#show-more-button {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-top: 20px; /* Adjust the top margin to position the button */
+    /* You can adjust other properties like margin, padding, font size, etc. to fit your design */
+}
+.gallery-section  {
+    margin-bottom: 0px;
+}
+.hidden-images  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+/* Apply styles to the entire contact section */
+#contact {
+    padding-top: 40px;
+    margin-left: -50px;
+    background: linear-gradient(to right, #C5C5C5, white);
+    color: black;
+    padding-right: 120px; /* Add padding to space out the content */
+    padding-left: 120px;
+    text-align: center;
+    max-width: 1200px; /* Adjust this value to your desired maximum width */
+  }
+  
+  /* Style the section header */
+  #contact .section-header h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #contact .section-header p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  #contact .section-header h5 {
+    font-size: 18px;
+    margin-top: 20px; /* Add space between the paragraphs */
+  }
+  
+  /* Style the contact info columns */
+  #contact .contact-info .col-md-4 {
+    margin-bottom: 5px; /* Add space between columns */
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    
+  }
+  
+  /* Style the address */
+  #contact .contact-address address {
+    font-style: normal; /* Remove italics from the address */
+  }
+  #contact .contact-address h3 {
+    margin-top: 15px; /* Remove italics from the address */
+  }
+  #contact .contact-phone h3 {
+    margin-top: 15px; /* Remove italics from the address */
+  }
+  #contact .contact-email h3 {
+    margin-top: 15px; /* Remove italics from the address */
+  }
+  /* Style the phone numbers */
+  
+  #contact .contact-phone p {
+    font-size: 18px;
+    margin: 5px 0; /* Add space between phone numbers */
+  }
+  #contact .contact-phone{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  #contact .contact-email {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  #contact .contact-address {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  /* Style the email link */
+  #contact .contact-email a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Style the form */
+  #contact .form p {
+    font-size: 18px;
+    margin-top: 20px; /* Add space between paragraphs */
+  }
+  
+  /* Style the form inputs */
+  #contact .form .form-control {
+    margin-right:2px;
+    margin-top:1px;
+    margin-bottom: 0px;
+    background-color: white; /* Input background color */
+    color: black; /* Input text color */
+    border: 1px solid white; /* Input border color */
+    
+  }
+  
+  
+  /* Style the form button */
+  #contact .form button[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact .form button[type="submit"]:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: black;
+  }
+  .contact-email img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between the icon and text */
+  }
+  /* Add any other styles you need for specific elements within the contact section here */
+  .form-row {
+    padding-bottom: 0px;
+    margin-right: 1px;
+    padding-right: 0px;;
+    padding-left: 0px;
+    display: flex; /* Use flexbox to place elements in a row */
+    justify-content: space-between; /* Space elements evenly within the row */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  /* Optionally, add some margin to separate the fields */
+  .form-group {
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-bottom: 5px;
+  }
+  
+  /* You can also style the input fields individually if desired */
+  .form-control {
+    width: 100%; /* Make the input fields expand to fill the available width */
+    padding: 10px; /* Add padding for spacing inside the input fields */
+    border: 1px solid #ccc; /* Add a border with a light gray color */
+    border-radius: 5px; /* Add rounded corners to the input fields */
+    font-size: 16px; /* Set the font size */
+    line-height: 1.5; /* Set the line height for better readability */
+  }
+  .form{
+    margin-left:100px;
+    margin-right:100px;
+    padding-right: 15px;
+    padding-left: 5px;
+  }
+  .form-group.col-md-6 input[type="text"]{
+    width:450px;
+  }
+.form-group.col-md-6 input[type="email"] {
+    width: 485px; /* You can adjust the width as needed */
+}
+.working-hours{
+    text-align: left;
+    margin-left:80px;
+    color: black;
+}
+
+.box2 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 5px;
+    width: 75px; /* Set the width of the box */
+    height: 5px; /* Set the height of the box */
+    background-color: white; /* Set the background color */
+    border: 2px solid blue; /* Add a border */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin around the box */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center; /* Center the text inside the box */
+    font-size: 18px; /* Set the font size */
+}
+.programs {
+    padding: 20px;
+    align-items: center;
+    text-align: center; /* Center the content in the programs div */
+    margin-top: 10px; /* Add margin to separate it from the box above */
+}
+.s-container {
+    background: linear-gradient(to right, #C5C5C5, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+}
+.programs h {
+    color: red;
+    font-weight: bold;
+    font-size:40px;
+}
+.programs p{
+    font-size:20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+ .box3 {
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    text-align: center; /* Optional: Center align the boxes */
+    align-items: center;
+}
+.inno{
+    display: flex;
+    flex-direction: column;
+}
+.inno h{
+    color: red;
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.box-item {
+    font-size: 20px;
+    border-radius: 15px 50px;
+    text-align: center;
+    width: 300px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    background-color: #e0e0e0; /* Add your desired background color */
+    margin: 20px; /* Add spacing between the boxes */
+    padding-top: 70px;
+}
+.ho{
+    display: flex;
+    flex-direction: horizontal;
+}
+.ho img{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: 500px;
+}
+
+.reservation-button {
+    padding-top: 0px;;
+    padding: 10px 5px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin around the box */
+    margin-bottom: 60px;
+    margin-left: 500px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 5px;
+    background-color: #007BFF; /* Choose your desired background color */
+    color: white; /* Text color */
+    border: none; /* Remove button border if desired */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer; /* Change cursor to a hand on hover for better user experience */
+    font-weight: bold; /* Make the text bold if desired */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.reservation-button:hover {
+    background-color: #0056b3; /* Change background color on hover if desired */
+}
+.contact-info2 {
+   /* Set the background image */
+    background-image: url('images/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Add a background color with transparency */
+    background-color: rgb(31, 25, 25); /* Adjust the alpha (fourth value) for the desired transparency */
+    /* You can also use hex color with opacity: background-color: #00000080; (80 is the opacity value in hexadecimal) */
+}
+
+.contact-info2 p{
+    font-weight: bolder;
+    color: lightblue;
+}
+.engage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.image-engage {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.row2 {
+    margin: 0%;
+    padding:10px;
+    display: flex; /* Display items in a row */
+    justify-content: space-between; /* Space items evenly within the row */
+}
+.engage-item{
+    justify-content: space-between; /* Space items evenly within the row */
+    text-align: center;
+    margin:20px;
+}
+.previlledge  {
+    padding-left:150px;
+    padding-right:150px;
+    padding-bottom: 50px;
+    margin:0%;
+}
+.previlledge h {
+    color:red;
+    font-size:30px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    margin-left:220px;
+}
+.previlledge ul{
+    font-size:18px;
+    margin-right:20px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+.previlledge p{
+    font-size:20px;
+    margin-top: 20px;
+}
+.e-container{
+    margin-top: 30px;
+}
+.work h{
+    color: red;
+    font-size:24px;
+    margin-left: 10px;
+}
+.three {
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.three img{
+    justify-content: space-between;
+    height:300px;
+    width:300px;
+    margin-right: 10px;;
+}
+/* Add this CSS inside your "styles.css" file or in a <style> tag in your HTML document */
+@media screen and (max-width: 768px) {
+    /* Adjust the max-width value as needed based on your design */
+  
+    /* Center-align the text in the "center-statement" and "sub-statement" divs */
+    .center-statement, .sub-statement {
+      text-align: center;
+    }
+  
+    /* Reduce the font size of the main text and center-align it */
+    .main-text {
+      font-size: 16px; /* Adjust the font size as needed */
+      text-align: center;
+    }
+  
+    /* Adjust the layout of the "life-cycle" boxes for smaller screens */
+    .box {
+      width: 100%; /* Make the boxes full-width on small screens */
+      margin-bottom: 20px; /* Add spacing between the boxes */
+      text-align: center; /* Center-align the content */
+    }
+  
+    /* Adjust the layout of the "success-stories" videos for smaller screens */
+    .video-row {
+      flex-direction: column; /* Stack videos vertically on small screens */
+    }
+  
+    .video {
+      margin-bottom: 20px; /* Add spacing between videos */
+    }
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+      }
+    
+      nav li {
+        margin: 10px 0; /* Add spacing between menu items */
+      }
+    
+      /* Adjust font size for smaller screens */
+      nav a {
+        font-size: 16px; /* Adjust the font size as needed */
+      }
+    
+      /* Hide the dropdown arrows on smaller screens */
+      .arrow {
+        display: none;
+      }
+    
+      /* Add a mobile menu icon */
+      .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px; /* Adjust the size of the mobile menu icon */
+      }
+    
+      /* Hide the menu by default on smaller screens */
+      nav ul {
+        display: none;
+      }
+    
+      /* Show the menu when the mobile menu icon is clicked */
+      .menu-open .mobile-menu-icon {
+        display: none;
+      }
+    
+      .menu-open nav ul {
+        display: flex;
+        flex-direction: column;
+      }
+  
+    /* Adjust other elements as needed for smaller screens */
+  }
+  
